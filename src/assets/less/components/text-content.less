@@ -1,0 +1,31 @@
+.text-content {
+  p {
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    font-size: 15px;
+
+    p:not(:first-child) {
+      margin-top: 18px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+
+    p:not(:first-child) {
+      margin-top: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+
+    p:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+}

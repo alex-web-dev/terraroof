@@ -1,0 +1,87 @@
+.callback-bg {
+  padding-top: 112px;
+
+  &__content {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background: url(../../img/callback-bg.jpg) top / cover no-repeat;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(@color-primary, 0.3);
+    }
+  }
+
+  &__main {
+    position: relative;
+    z-index: 1;
+    padding: 72px 120px 80px;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    color: #fff;
+    max-width: 614px;
+  }
+
+  &__form {
+    padding: 40px 80px;
+    background: #fff;
+    border-radius: 16px;
+  }
+
+  @media (max-width: 1240px) {
+    padding-top: 82px;
+
+    &__main {
+      padding: 50px 60px 55px;
+    }
+
+    &__form {
+      padding: 30px 50px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__main {
+      padding: 35px;
+    }
+
+    &__title {
+      margin-bottom: 28px;
+      max-width: 370px;
+    }
+
+    &__form {
+      padding: 25px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 480px;
+    }
+
+    &__main {
+      padding: 30px 15px 33px;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      max-width: 245px;
+    }
+
+    &__form {
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+}

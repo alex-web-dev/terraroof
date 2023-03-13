@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    margin-left: 14px;
+    display: inline-block;
+    max-width: 108px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  @media (max-width: 1140px) {
+    &__text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__img {
+      max-width: 130px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__img {
+      max-width: 72px;
+    }
+  }
+}

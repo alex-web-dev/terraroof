@@ -1,0 +1,68 @@
+.callback-form {
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__main {
+    &--row {
+      display: flex;
+    }
+  }
+
+  &__main--row &__input {
+    flex: 1 1 100%;
+
+    &:not(:first-child) {
+      margin-left: 18px;
+    }
+  }
+
+  &__main--row &__btn {
+    margin-left: 18px;
+    flex: 0 0 270px;
+  }
+
+  @media (max-width: 1240px) {
+    &__main--row &__input {
+      width: 100%;
+    }
+
+    &__main--row &__btn {
+      flex: 0 0 30%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__main {
+      &--row {
+        flex-direction: column;
+      }
+    }
+
+    &__main--row &__input {
+      &:not(:first-child) {
+        margin-top: 8px;
+        margin-left: 0;
+      }
+    }
+
+    &__main--row &__btn {
+      margin-top: 18px;
+      margin-left: 0;
+    }
+
+    &__title {
+      margin-bottom: 14px;
+      max-width: 245px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.375;
+    }
+  }
+}

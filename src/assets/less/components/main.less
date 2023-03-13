@@ -1,0 +1,49 @@
+.main {
+  flex: 1 1 auto;
+  overflow: hidden;
+
+  &__main-product {
+    margin-top: 52px;
+  }
+
+  &__callback-bg,
+  &__features {
+    margin-top: 112px;
+  }
+
+  @media (max-width: 1240px) {
+    &__main-product {
+      margin-top: 42px;
+    }
+
+    &__callback-bg,
+    &__features {
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__main-product {
+      margin-top: 32px;
+    }
+
+    &__callback-bg {
+      margin-top: 52px;
+    }
+
+    &__features {
+      margin-top: 52px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__main-product {
+      margin-top: 24px;
+    }
+
+    &__callback-bg,
+    &__features {
+      margin-top: 24px;
+    }
+  }
+}

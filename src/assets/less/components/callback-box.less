@@ -1,0 +1,63 @@
+.callback-box {
+  position: fixed;
+  bottom: 37px;
+  right: 37px;
+  z-index: 30;
+
+  &__btn {
+    width: 82px;
+    height: 82px;
+    transition: transform .3s;
+
+    img {
+      width: 51px;
+      height: 51px;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  @media (max-width: 1240px) {
+    bottom: 30px;
+    right: 30px;
+
+    &__btn {
+      width: 68px;
+      height: 68px;
+
+      img {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__btn {
+      width: 54px;
+      height: 54px;
+
+      img {
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    bottom: 12px;
+    right: 12px;
+
+    &__btn {
+      width: 48px;
+      height: 48px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
