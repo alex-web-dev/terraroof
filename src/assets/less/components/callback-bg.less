@@ -1,20 +1,22 @@
 .callback-bg {
-  padding-top: 112px;
-
   &__content {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-    background: url(../../img/callback-bg.jpg) top / cover no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(@color-primary, 0.3);
+    &--backdrop {
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(@color-primary, 0.3);
+      }
     }
   }
 
@@ -27,7 +29,6 @@
   &__title {
     margin-bottom: 42px;
     color: #fff;
-    max-width: 614px;
   }
 
   &__form {
@@ -37,8 +38,6 @@
   }
 
   @media (max-width: 1240px) {
-    padding-top: 82px;
-
     &__main {
       padding: 50px 60px 55px;
     }

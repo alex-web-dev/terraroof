@@ -1,5 +1,5 @@
 .tag {
-  padding: 4px 15px 4px 18px;
+  padding: 9px 15px 9px 18px;
   display: flex;
   align-items: center;
   background-color: @color-second;
@@ -14,7 +14,7 @@
 
   &__text {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1;
     color: #fff;
   }
 
@@ -33,9 +33,21 @@
   @media (max-width: 767px) {
     padding-top: 6px;
     padding-bottom: 6px;
+
+    &__icon {
+      &--sm-small {
+        width: 17px;
+        height: 17px;
+      }
+    }
     
     &__text {
       font-size: 14px;
+    }
+
+    &--sm-small {
+      padding-left: 11px;
+      padding-right: 11px;
     }
   }
 }

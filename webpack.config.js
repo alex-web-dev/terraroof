@@ -54,6 +54,11 @@ const plugins = () => {
 					to: path.resolve(__dirname, 'build/assets/img'),
 					noErrorOnMissing: true,
 				},
+				{
+					from: path.resolve(__dirname, 'src/assets/video'),
+					to: path.resolve(__dirname, 'build/assets/video'),
+					noErrorOnMissing: true,
+				},
 			]
 		}),
 		new MiniCssExtractPlugin({
