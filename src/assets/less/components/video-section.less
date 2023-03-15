@@ -72,6 +72,12 @@
 
   @media (max-width: 767px) {
     min-height: 320px;
+
+    &__main {
+      max-width: calc(480px + @container-sm-offset * 2);
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   @media (max-width: 480px) {

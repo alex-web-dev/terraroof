@@ -1,0 +1,132 @@
+.partners {
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 42px;
+    text-align: center;
+  }
+
+  &__slider {
+    margin: -40px -40px;
+    padding: 40px 40px;
+
+    &-box {
+      position: relative;
+      padding-bottom: 55px;
+    }
+  }
+
+  &__slide {
+    position: relative;
+    height: 216px;
+    padding: 35px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow .3s, background .3s;
+
+    &.swiper-slide.swiper-slide-active,
+    &.swiper-slide.swiper-slide-next,
+    &.swiper-slide.swiper-slide-next+.swiper-slide {
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+      background: #FFFFFF;
+    }
+  }
+
+  &__img {
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  &__pagination {
+    .swiper-pagination-bullet {
+      padding-left: 3px;
+      padding-right: 3px;
+      
+      &:before {
+        width: 16px;
+        height: 16px;
+        background-color: #ededed;
+      }
+
+      &-active {
+        &:before {
+          background-color: @color-primary;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__title {
+      margin-bottom: 32px;
+    }
+    
+    &__slide {
+      height: 180px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__slider {
+      &-box {
+        padding-bottom: 50px;
+      }
+    }
+
+    &__img {
+      max-width: 180px;
+    }
+
+    &__pagination {
+      .swiper-pagination-bullet {
+        &:before {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 18px;
+      font-size: 24px;
+    }
+
+    &__content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 480px;
+    }
+
+    &__slider {
+      &-box {
+        padding-bottom: 28px;
+      }
+    }
+
+    &__slide {
+
+      &.swiper-slide.swiper-slide-next,
+      &.swiper-slide.swiper-slide-next+.swiper-slide {
+        box-shadow: none;
+        background: transparent;
+      }
+    }
+
+    &__pagination {
+      .swiper-pagination-bullet {
+        &:before {
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+  }
+}

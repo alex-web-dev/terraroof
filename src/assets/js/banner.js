@@ -1,12 +1,12 @@
-import Swiper, { Pagination } from "swiper";
+import Swiper, { Pagination } from 'swiper';
 
 Swiper.use(Pagination);
 
-new Swiper(".banner__slider", {
+new Swiper('.banner__slider', {
   slidesPerView: 1,
   speed: 600,
   pagination: {
-    el: ".banner__pagination",
+    el: '.banner__pagination',
     clickable: true,
   },
 });

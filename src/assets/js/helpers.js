@@ -4,8 +4,8 @@ export function moveElement(options) {
     from,
     to,
     width,
-    fromInsertType = "append",
-    toInsertType = "append",
+    fromInsertType = 'append',
+    toInsertType = 'append',
   } = options;
 
   const $elem = document.querySelector(element);

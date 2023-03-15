@@ -25,6 +25,14 @@
     transform: translateY(1px);
     .pseudo-icon('../img/icons/arrow-right-up.svg', 14px, 14px);
   }
+
+  &--primary {
+    color: @color-primary;
+
+    &:after {
+      background-image: url('../img/icons/arrow-right-up-primary.svg');
+    }
+  }
 }
 
 .title1 {
@@ -71,6 +79,12 @@
 
 .text {
   line-height: 1.2;
+
+  p {
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
 }
 
 .icon-circle {
@@ -169,6 +183,12 @@
 
   .text {
     font-size: 15px;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 14px;
+      }
+    }
   }
 
   .link-more {
@@ -215,6 +235,12 @@
 
   .text {
     font-size: 14px;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
   }
 
   .input {
