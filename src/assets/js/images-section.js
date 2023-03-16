@@ -2,15 +2,15 @@ import Swiper, { Pagination } from "swiper";
 
 Swiper.use(Pagination);
 
-const $galleries = document.querySelectorAll('.gallery');
-$galleries.forEach($gallery => {
-  const $slider = $gallery.querySelector('.gallery__slider');
+const $sections = document.querySelectorAll('.images-section');
+$sections.forEach($section => {
+  const $slider = $section.querySelector('.images-section__slider');
   new Swiper($slider, {
     speed: 600,
     enabled: true,
     slidesPerView: 1,
     pagination: {
-      el: ".gallery__pagination",
+      el: ".images-section__pagination",
       clickable: true,
     },
     breakpoints: {

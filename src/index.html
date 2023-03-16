@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="assets/img/favicon.png">
 	<title>TerraRoof</title>
@@ -70,7 +70,7 @@
 		</div>
 	</header>
 
-	<main class="main">
+	<main class="main main--home">
 		<section class="banner">
 			<div class="banner__content">
 				<div class="banner__info">
@@ -95,22 +95,24 @@
 					</div>
 					<a class="btn banner__btn" href="#">Каталог продукции</a>
 				</div>
-				<div class="banner__slider swiper">
-					<div class="swiper-wrapper">
-						<div class="banner__slide swiper-slide">
-							<img src="assets/img/banner-img.jpg" alt="">
+				<div class="banner__slider-box">
+					<div class="banner__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="banner__slide swiper-slide">
+								<img src="assets/img/banner-img.jpg" alt="">
+							</div>
+							<div class="banner__slide swiper-slide">
+								<img src="assets/img/banner-img.jpg" alt="">
+							</div>
+							<div class="banner__slide swiper-slide">
+								<img src="assets/img/banner-img.jpg" alt="">
+							</div>
+							<div class="banner__slide swiper-slide">
+								<img src="assets/img/banner-img.jpg" alt="">
+							</div>
 						</div>
-						<div class="banner__slide swiper-slide">
-							<img src="assets/img/banner-img.jpg" alt="">
-						</div>
-						<div class="banner__slide swiper-slide">
-							<img src="assets/img/banner-img.jpg" alt="">
-						</div>
-						<div class="banner__slide swiper-slide">
-							<img src="assets/img/banner-img.jpg" alt="">
-						</div>
+						<div class="banner__pagination"></div>
 					</div>
-					<div class="banner__pagination"></div>
 				</div>
 			</div>
 		</section>
@@ -132,7 +134,7 @@
 						</div>
 						<h2 class="title2 main-product__title">Фальцевая кровля</h2>
 						<div class="text-content main-product__text-content">
-							<p>Многие думают, что Lorem Ipsum - взятый с потолка взятый псевдо-латинский набор слов, но
+							<p>Многие думают, что Lorem Ipsum - взятый с потолка взятый псевдо‑латинский набор слов, но
 								это не совсем так.</p>
 							<p>Многие думают, что Lorem Ipsum - взятый с потолка взятый псевдо-латинский набор слов, но
 								это не совсем так. </p>
@@ -316,19 +318,27 @@
 					<h2 class="title2 categories-section__title">Все для кровли в одном месте</h2>
 					<div class="categories-section__list">
 						<a class="categories-section__item" href="#">
-							<h3 class="categories-section__item-title">Кровельные материалы</h3>
+							<h3 class="categories-section__item-title">
+								<span>Кровельные материалы</span>
+							</h3>
 						</a>
 						<a class="categories-section__item categories-section__item--active" href="#">
-							<h3 class="categories-section__item-title">Мансардные окна</h3>
+							<h3 class="categories-section__item-title">
+								<span>Мансардные окна</span>
+							</h3>
 						</a>
 						<a class="categories-section__item" href="#">
-							<h3 class="categories-section__item-title">Гидроизоляция</h3>
+							<h3 class="categories-section__item-title">
+								<span>Гидроизоляция</span>
+							</h3>
 						</a>
 						<div class="categories-section__item categories-section__item--img">
 							<img class="categories-section__item-bg" src="assets/img/categories-section/1.jpg" alt="">
 						</div>
 						<a class="categories-section__item" href="#">
-							<h3 class="categories-section__item-title">Водосточные системы</h3>
+							<h3 class="categories-section__item-title">
+								<span>Водосточные системы</span>
+							</h3>
 						</a>
 						<div class="categories-section__item categories-section__item--img">
 							<img class="categories-section__item-bg" src="assets/img/categories-section/2.jpg" alt="">
@@ -358,38 +368,38 @@
 			</div>
 		</section>
 
-		<section class="gallery main__section">
+		<section class="images-section main__section">
 			<div class="container">
-				<div class="gallery__content">
-					<h2 class="title2 gallery__title">Мы сделаем Ваш дом объектом восхищения</h2>
-					<div class="gallery__slider-box">
-						<div class="gallery__slider swiper">
-							<div class="swiper-wrapper gallery__slider-wrapper">
-								<div class="gallery__slide swiper-slide">
-									<img class="gallery__img" src="assets/img/gallery/1.jpg" alt="">
+				<div class="images-section__content">
+					<h2 class="title2 images-section__title">Мы сделаем Ваш дом объектом восхищения</h2>
+					<div class="images-section__slider-box">
+						<div class="images-section__slider swiper">
+							<div class="swiper-wrapper images-section__slider-wrapper">
+								<div class="images-section__slide swiper-slide">
+									<img class="images-section__img" src="assets/img/house-images/1.jpg" alt="">
 								</div>
-								<div class="gallery__slide swiper-slide">
-									<img class="gallery__img" src="assets/img/gallery/2.jpg" alt="">
+								<div class="images-section__slide swiper-slide">
+									<img class="images-section__img" src="assets/img/house-images/2.jpg" alt="">
 								</div>
-								<div class="gallery__slide swiper-slide">
-									<img class="gallery__img" src="assets/img/gallery/3.jpg" alt="">
+								<div class="images-section__slide swiper-slide">
+									<img class="images-section__img" src="assets/img/house-images/3.jpg" alt="">
 								</div>
-								<div class="gallery__slide swiper-slide">
-									<img class="gallery__img" src="assets/img/gallery/4.jpg" alt="">
+								<div class="images-section__slide swiper-slide">
+									<img class="images-section__img" src="assets/img/house-images/4.jpg" alt="">
 								</div>
-								<div class="gallery__slide swiper-slide">
-									<img class="gallery__img" src="assets/img/gallery/5.jpg" alt="">
+								<div class="images-section__slide swiper-slide">
+									<img class="images-section__img" src="assets/img/house-images/5.jpg" alt="">
 								</div>
-								<div class="gallery__slide gallery__slide--btn swiper-slide">
-									<button class="gallery__slide-btn">
+								<div class="images-section__slide images-section__slide--btn swiper-slide">
+									<button class="images-section__slide-btn">
 										<span>Заказать просчет кровли</span>
 									</button>
 								</div>
 							</div>
 						</div>
-						<div class="gallery__pagination"></div>
+						<div class="images-section__pagination"></div>
 					</div>
-					<a class="btn gallery__mobile-btn" href="#">Заказать просчет кровли</a>
+					<a class="btn images-section__mobile-btn" href="#">Заказать просчет кровли</a>
 				</div>
 			</div>
 		</section>
@@ -498,6 +508,110 @@
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="price-list main__section">
+			<div class="container">
+				<div class="price-list__content">
+					<div class="price-list__info">
+						<h3 class="title4 price-list__title">Скачать прайс</h3>
+						<p class="text text--gray price-list__text">Покупая композитную черепицу,
+							Вы получаете установочное оборудование в аренду бесплатно</p>
+						<a class="btn btn--border price-list__btn" href="#">Скачать</a>
+					</div>
+					<div class="price-list__contacts">
+						<div class="contact-item price-list__contact">
+							<div class="contact-item__icon">
+								<img src="assets/img/icons/location.svg" alt="">
+							</div>
+							<div class="text text--gray contact-item__name">Центральный штаб</div>
+							<div class="contact-item__value">г. Астана, ул. Керей, Жанибек хандар, 30</div>
+						</div>
+						<div class="contact-item price-list__contact">
+							<div class="contact-item__icon">
+								<img src="assets/img/icons/message.svg" alt="">
+							</div>
+							<div class="text text--gray contact-item__name">Почта:</div>
+							<a class="contact-item__value" href="mailto:info@terraroof.kz">info@terraroof.kz</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="social main__social">
+			<div class="container">
+				<div class="social__content">
+					<h2 class="title2 title2--white social__title">Мы в социальных сетях</h2>
+					<p class="text text--white social__text">Подпишитесь на нас и следите за новостями, акциями и
+						спец.предложениями!</p>
+					<div class="social__list">
+						<a class="social__item" href="#">
+							<img class="social__item-icon" src="assets/img/icons/social/instagram.svg" alt="">
+							<span class="social__item-text">Instagram</span>
+						</a>
+						<a class="social__item" href="#">
+							<img class="social__item-icon" src="assets/img/icons/social/facebook.svg" alt="">
+							<span class="social__item-text">Facebook</span>
+						</a>
+						<a class="social__item" href="#">
+							<img class="social__item-icon" src="assets/img/icons/social/youtube.svg" alt="">
+							<span class="social__item-text">YouTube</span>
+						</a>
+						<a class="social__item" href="#">
+							<img class="social__item-icon" src="assets/img/icons/social/whatsapp.svg" alt="">
+							<span class="social__item-text">WhatsApp</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery main__gallery">
+			<div class="container">
+				<div class="gallery__content">
+					<div class="gallery__header">
+						<h3 class="title4 gallery__title gallery__title--long">Подпишись на наш инстаграм и следи за новостями, акциями и спец.предложениями!</h3>
+						<a class="btn btn--border gallery__btn" href="https://instagram.com/" target="_blank">Подписаться</a>
+					</div>
+					<div class="gallery__list">
+						<a class="gallery__item" href="https://www.instagram.com/p/CnTT-QcI4WS/" target="_blank">
+							<img class="gallery__img" src="assets/img/instagram-images/1.jpg" alt="">
+						</a>
+						<a class="gallery__item" href="https://www.instagram.com/p/CngNTTuILS6/" target="_blank">
+							<img class="gallery__img" src="assets/img/instagram-images/2.jpg" alt="">
+						</a>
+						<a class="gallery__item" href="https://www.instagram.com/p/CnEriSwrxyo/" target="_blank">
+							<img class="gallery__img" src="assets/img/instagram-images/3.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery main__section">
+			<div class="container">
+				<div class="gallery__content">
+					<div class="gallery__header">
+						<h3 class="title4 gallery__title">Подпишись на наш Youtube-канал и следи за новыми видео</h3>
+						<a class="btn btn--border gallery__btn" href="https://www.youtube.com/" target="_blank">Подписаться</a>
+					</div>
+					<div class="gallery__list">
+						<div class="youtube-player gallery__item gallery__item--video" data-src="https://www.youtube.com/embed/Gx543KbuGFY">
+							<img class="youtube-player__preview gallery__img" src="assets/img/youtube-previews/1.jpg" alt="">
+							<button class="youtube-player__play"></button>
+						</div>
+						<div class="youtube-player gallery__item gallery__item--video" data-src="https://www.youtube.com/embed/Gx543KbuGFY">
+							<img class="youtube-player__preview gallery__img" src="assets/img/youtube-previews/2.jpg" alt="">
+							<button class="youtube-player__play"></button>
+						</div>
+						<div class="youtube-player gallery__item gallery__item--video" data-src="https://www.youtube.com/embed/Gx543KbuGFY">
+							<img class="youtube-player__preview gallery__img" src="assets/img/youtube-previews/3.jpg" alt="">
+							<button class="youtube-player__play"></button>
 						</div>
 					</div>
 				</div>

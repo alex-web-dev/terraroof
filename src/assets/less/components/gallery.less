@@ -1,25 +1,42 @@
 .gallery {
+  &__header {
+    margin-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__title {
-    margin-bottom: 38px;
-    text-align: center;
-  }
+    max-width: 590px;
+    padding-right: 20px;
 
-  &__slider {
-    &-box {
-      position: relative;
-    }
-
-    &-wrapper {
-      width: auto;
-      flex-wrap: wrap;
-      margin: -20px -10px 0;
+    &--long {
+      max-width: 730px;
     }
   }
 
-  &__slide {
+  &__btn {
+    flex: 0 0 270px;
+  }
+
+  &__list {
+    margin: -20px -10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
     margin: 20px 10px 0;
-    padding-top: 21.9%;
-    width: calc(100% / 3 - 20px);
+    padding-top: 31.8%;
+    width: calc(100% / 12 * 4 - 20px);
+    object-fit: cover;
+    border-radius: 6px;
+    overflow: hidden;
+
+    &--video {
+      padding-top: 20.5%;
+    }
   }
 
   &__img {
@@ -28,97 +45,22 @@
     top: 0;
     width: 100%;
     height: 100%;
-    border-radius: 6px;
     object-fit: cover;
   }
 
-  &__slide-btn {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: @color-primary;
-    border-radius: 6px;
-    text-align: left;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.375;
-    text-transform: uppercase;
-    color: #fff;
-
-    span {
-      max-width: 230px;
-
-      &:before {
-        position: absolute;
-        right: 25px;
-        top: 25px;
-        .pseudo-icon('../img/icons/arrow-right-up.svg', 20px, 20px);
-      }
-    }
-  }
-
-  &__pagination {
-    display: none;
-  }
-
-  &__mobile-btn {
-    display: none;
-  }
-
-  @media (min-width: 767.01px) {
-    &__slider {
-      &-wrapper {
-        transform: translate(0, 0) !important;
-      }
-    }
-  }
-
   @media (max-width: 1240px) {
-    &__slide-btn {
-      padding: 20px;
-      font-size: 22px;
-
-      span {
-        &:before {
-          right: 20px;
-          top: 20px;
-          width: 18px;
-          height: 18px;
-        }
-      }
+    &__header {
+      margin-bottom: 32px;
     }
   }
 
   @media (max-width: 991px) {
-    &__title {
-      margin-bottom: 28px;
+    &__header {
+      margin-bottom: 24px;
     }
 
-    &__slide {
-      margin: 20px 10px 0;
-      padding-top: 32.25%;
-      width: calc(50% - 20px);
-      object-fit: cover;
-    }
-
-    &__slide-btn {
-      padding: 16px;
-      font-size: 20px;
-
-      span {
-        &:before {
-          right: 15px;
-          top: 15px;
-          width: 16px;
-          height: 16px;
-        }
-      }
+    &__btn {
+      flex-basis: 220px;
     }
   }
 
@@ -129,74 +71,29 @@
       max-width: 480px;
     }
 
-    &__title {
+    &__header {
       margin-bottom: 18px;
-      font-size: 24px;
-      text-align: left;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    &__slider {
-      &-box {
-        padding-bottom: 26px;
-      }
-
-      &-wrapper {
-        margin: 0;
-        flex-wrap: nowrap;
-      }
+    &__btn {
+      margin-top: 12px;
+      flex: none;
+      width: 220px;
     }
 
-    &__slide {
-      margin: 0;
-      width: 100%;
-      padding-top: 68.75%;
-
-      &--btn {
-        display: none;
-      }
+    &__list {
+      margin-top: -18px;
     }
+    
+    &__item {
+      margin-top: 18px;
+      padding-top: 64.75%;
+      width: calc(100% - 20px);
 
-    &__slide-btn {
-      padding: 14px;
-      font-size: 18px;
-
-      span {
-        &:before {
-          width: 14px;
-          height: 14px;
-        }
-      }
-    }
-
-    &__pagination {
-      display: block;
-      
-      .swiper-pagination-bullet {
-        &:before {
-          background-color: #ededed;
-        }
-
-        &-active {
-          &:before {
-            background-color: @color-second;
-          }
-        }
-      }
-    }
-
-    &__mobile-btn {
-      margin-top: 15px;
-      padding: 25px 14px;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: 600;
-
-      &:after {
-        margin-left: 15px;
-        .pseudo-icon('../img/icons/arrow-right-up.svg', 14px, 14px);
+      &--video {
+        padding-top: 56.25%;
       }
     }
   }
