@@ -17,29 +17,35 @@
     transform: translateX(22px);
     display: flex;
     align-items: flex-start;
+
+    &-icon {
+      margin-right: 8px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #0fd145;
+    }
+
+    &-title {
+      color: @color-gray;
+      font-weight: 600;
+      line-height: 1.375;
+    }
+
+    &-text {
+      font-size: 12px;
+      line-height: 1.33;
+      color: @color-gray;
+    }
   }
 
-  &__contact-icon {
-    margin-right: 8px;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: #0fd145;
-  }
-  
-  &__contact-title {
-    color: @color-gray;
-    font-weight: 600;
-    line-height: 1.375;
-  }
-  
-  &__contact-text {
-    font-size: 12px;
-    line-height: 1.33;
-    color: @color-gray;
+  @media (max-width: 1340px) {
+    &__contact {
+      transform: translateX(0);
+    }
   }
 
   @media (max-width: 1240px) {

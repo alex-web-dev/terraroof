@@ -99,7 +99,7 @@
     &__content {
       margin-left: auto;
       margin-right: auto;
-      max-width: 480px;
+      max-width: @content-sm-max-width;
     }
 
     &__header {
@@ -123,6 +123,14 @@
       margin-top: 24px;
       padding-top: 25px;
       width: 100%;
+
+      &-title {
+        padding-right: 10px;
+      }
+
+      &-text {
+        padding-right: 10px;
+      }
 
       &:nth-child(2n) {
         margin-left: 0;

@@ -82,6 +82,10 @@
     &__item {
       padding: 17px 22px;
 
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+
       &-header {
         font-size: 22px;
       }
@@ -128,10 +132,10 @@
     padding: 24px 0 46px;
 
     &__content {
-      flex-direction: column;
-      max-width: 480px;
       margin-left: auto;
       margin-right: auto;
+      flex-direction: column;
+      max-width: @content-sm-max-width;
     }
 
     &__info {
@@ -146,6 +150,10 @@
 
     &__item {
       padding: 12px 14px;
+
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
 
       &-header {
         font-size: 16px;

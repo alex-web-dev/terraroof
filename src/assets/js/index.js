@@ -8,3 +8,4 @@ import "./video-player.js";
 import "./youtube-player.js";
 import "./partners.js";
 import "./accordion.js";
+import "./footer.js";

@@ -77,19 +77,25 @@
       margin-left: auto;
       margin-right: auto;
       flex-direction: column;
-      max-width: 480px;
+      max-width: @content-sm-max-width;
     }
 
     &__info {
       padding: 18px 14px 20px;
     }
 
+    &__title {
+      line-height: 1.35;
+    }
+
     &__text {
+      margin-top: 8px;
       font-size: 13px;
+      line-height: 1.375;
     }
 
     &__btn {
-      margin-top: 18px;
+      margin-top: 16px;
       min-width: 232px;
     }
 

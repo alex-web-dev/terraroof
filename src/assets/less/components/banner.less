@@ -137,6 +137,13 @@
     &__btn {
       margin-top: 55px;
     }
+
+    &__slider {
+      &-box {
+        padding-top: 47.25%;
+        flex: 0 0 calc(52% - 3px);
+      }
+    }
   }
 
   @media (max-width: 991px) {
@@ -162,7 +169,7 @@
 
     &__content {
       position: relative;
-      max-width: 480px;
+      max-width: @content-sm-max-width;
       height: 416px;
       padding: 112px 14px 30px;
     }
@@ -171,7 +178,7 @@
       position: relative;
       z-index: 2;
       margin-top: 0;
-      padding: 18px 16px 15px;
+      padding: 18px 20px 15px 16px;
       background-color: rgba(#e4f5ff, 0.85);
       border-radius: 16px;
       pointer-events: none;
