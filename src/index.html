@@ -14,7 +14,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__content">
-				<a class="logo header__logo" href="#">
+				<a class="logo header__logo" href="index.html">
 					<img class="logo__img" src="assets/img/logo.png" alt="">
 					<span class="logo__text">Кровля достойная Вашего дома</span>
 				</a>
@@ -23,19 +23,109 @@
 						<div class="menu__title">Меню</div>
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a class="menu__link" href="#" data-title="Главная">Главная</a>
+								<a class="menu__link menu__link--active" href="#">Главная</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#" data-title="О компании">О компании</a>
+								<a class="menu__link" href="#">О компании</a>
+							</li>
+							<li class="menu__item menu__item--has-submenu">
+								<a class="menu__link" href="#">Каталог</a>
+								<ul class="submenu menu__submenu">
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-icon">
+												<img src="assets/img/icons/sale-second.svg" alt="">
+											</div>
+											<span class="submenu__item-text">Акции</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/1.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Керамическая черепица</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/2.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Композитная черепица</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/3.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Гибкая (битумная) черепица</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/4.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Металлочерепица</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/5.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Медная кровля</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/5.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Солнечная крыша</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/6.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Цинк-титановая кровля</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/5.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Кровельная гидроизоляция</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/7.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Водосточные системы</span>
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__item-link" href="#">
+											<div class="submenu__item-img">
+												<img src="assets/img/catalog-menu/5.jpg" alt="">
+											</div>
+											<span class="submenu__item-text">Аксессуары</span>
+										</a>
+									</li>
+								</ul>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#" data-title="Каталог">Каталог</a>
+								<a class="menu__link" href="#">Блог</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#" data-title="Блог">Блог</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#" data-title="Контакты">Контакты</a>
+								<a class="menu__link" href="#">Контакты</a>
 							</li>
 						</ul>
 						<div class="menu__contacts">
@@ -73,44 +163,106 @@
 	<main class="main main--home">
 		<section class="banner">
 			<div class="banner__content">
-				<div class="banner__info">
-					<h1 class="title1 banner__title">TerraRoof.</h1>
-					<h2 class="title2 banner__subtitle">Кровля для самых требовательных</h2>
-					<div class="banner__features">
-						<div class="banner__features-title">Полностью за наш счет:</div>
-						<div class="banner__features-list">
-							<div class="banner__feature">
-								<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg" alt="">
-								<span class="banner__feature-text">Доставка</span>
+				<div class="banner__slider swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="banner__main">
+								<div class="banner__info">
+									<h1 class="title1 banner__title">TerraRoof.</h1>
+									<h2 class="title2 banner__subtitle">Кровля для самых требовательных</h2>
+									<div class="banner__features">
+										<div class="banner__features-title">Полностью за наш счет:</div>
+										<div class="banner__features-list">
+											<div class="banner__feature">
+												<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg"
+													alt="">
+												<span class="banner__feature-text">Доставка</span>
+											</div>
+											<div class="banner__feature">
+												<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg"
+													alt="">
+												<span class="banner__feature-text">Обучение монтажу</span>
+											</div>
+											<div class="banner__feature">
+												<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg"
+													alt="">
+												<span class="banner__feature-text">Аренда оборудования</span>
+											</div>
+										</div>
+									</div>
+									<a class="btn banner__btn" href="#">Каталог продукции</a>
+								</div>
+								<div class="banner__img">
+									<img src="assets/img/banner-img.jpg" alt="">
+								</div>
 							</div>
-							<div class="banner__feature">
-								<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg" alt="">
-								<span class="banner__feature-text">Обучение монтажу</span>
+						</div>
+						<div class="swiper-slide">
+							<div class="banner__main">
+								<div class="banner__info">
+									<h1 class="title1 banner__title">TerraRoof.</h1>
+									<h2 class="title2 banner__subtitle">Кровля для самых требовательных</h2>
+									<div class="banner__features">
+										<div class="banner__features-title">Полностью за наш счет:</div>
+										<div class="banner__features-list">
+											<div class="banner__feature">
+												<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg"
+													alt="">
+												<span class="banner__feature-text">Доставка</span>
+											</div>
+											<div class="banner__feature">
+												<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg"
+													alt="">
+												<span class="banner__feature-text">Обучение монтажу</span>
+											</div>
+											<div class="banner__feature">
+												<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg"
+													alt="">
+												<span class="banner__feature-text">Аренда оборудования</span>
+											</div>
+										</div>
+									</div>
+									<a class="btn banner__btn" href="#">Каталог продукции</a>
+								</div>
+								<div class="banner__img">
+									<img src="assets/img/banner-img.jpg" alt="">
+								</div>
 							</div>
-							<div class="banner__feature">
-								<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg" alt="">
-								<span class="banner__feature-text">Аренда оборудования</span>
+						</div>
+						<div class="swiper-slide">
+							<div class="banner__main">
+								<div class="banner__info">
+									<h1 class="title1 banner__title">TerraRoof.</h1>
+									<h2 class="title2 banner__subtitle">Кровля для самых требовательных</h2>
+									<div class="banner__features">
+										<div class="banner__features-title">Полностью за наш счет:</div>
+										<div class="banner__features-list">
+											<div class="banner__feature">
+												<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg"
+													alt="">
+												<span class="banner__feature-text">Доставка</span>
+											</div>
+											<div class="banner__feature">
+												<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg"
+													alt="">
+												<span class="banner__feature-text">Обучение монтажу</span>
+											</div>
+											<div class="banner__feature">
+												<img class="banner__feature-icon" src="assets/img/icons/check-fill.svg"
+													alt="">
+												<span class="banner__feature-text">Аренда оборудования</span>
+											</div>
+										</div>
+									</div>
+									<a class="btn banner__btn" href="#">Каталог продукции</a>
+								</div>
+								<div class="banner__img">
+									<img src="assets/img/banner-img.jpg" alt="">
+								</div>
 							</div>
 						</div>
 					</div>
-					<a class="btn banner__btn" href="#">Каталог продукции</a>
-				</div>
-				<div class="banner__slider-box">
-					<div class="banner__slider swiper">
-						<div class="swiper-wrapper">
-							<div class="banner__slide swiper-slide">
-								<img src="assets/img/banner-img.jpg" alt="">
-							</div>
-							<div class="banner__slide swiper-slide">
-								<img src="assets/img/banner-img.jpg" alt="">
-							</div>
-							<div class="banner__slide swiper-slide">
-								<img src="assets/img/banner-img.jpg" alt="">
-							</div>
-							<div class="banner__slide swiper-slide">
-								<img src="assets/img/banner-img.jpg" alt="">
-							</div>
-						</div>
+					<div class="banner__pagination-box">
 						<div class="banner__pagination"></div>
 					</div>
 				</div>
@@ -133,12 +285,15 @@
 							</div>
 						</div>
 						<h2 class="title2 main-product__title">Фальцевая кровля</h2>
-						<div class="text-content main-product__text-content">
-							<p>Многие думают, что Lorem Ipsum - взятый с потолка взятый псевдо‑латинский набор слов, но
-								это не совсем так.</p>
-							<p>Многие думают, что Lorem Ipsum - взятый с потолка взятый псевдо-латинский набор слов, но
-								это не совсем так. </p>
-							<p>Его корни уходят в один фрагмент классической латыни 45 года н.э</p>
+						<div class="text-content text-dropdown main-product__text-content" data-droptext-length="108"
+							data-droptext-width="767">
+							Многие думают, что Lorem Ipsum - взятый с потолка взятый псевдо‑латинский набор слов, но
+							это не совсем так.
+							<br><br>
+							Многие думают, что Lorem Ipsum - взятый с потолка взятый псевдо-латинский набор слов, но
+							это не совсем так.
+							<br><br>
+							Его корни уходят в один фрагмент классической латыни 45 года н.э
 						</div>
 						<a class="btn main-product__btn" href="#">Каталог продукции</a>
 					</div>
@@ -146,21 +301,29 @@
 			</div>
 		</section>
 
-		<section class="callback-bg main__section">
+		<section class="callback-bg main__section" id="callback">
 			<div class="container">
 				<div class="callback-bg__content callback-bg__content--backdrop"
 					style="background-image: url('assets/img/callback-bg.jpg');">
 					<div class="callback-bg__main">
 						<h2 class="title2 callback-bg__title">Замена старой крыши <br> на новую от 2х недель</h2>
-						<div class="callback-form callback-form--row callback-bg__form">
+						<form class="callback-form callback-form--row callback-bg__form js-form" autocomplete="off">
 							<h3 class="title5 title5--sm-white callback-form__title">Оставьте заявку,
 								и&nbsp;мы&nbsp;свяжемся&nbsp;с&nbsp;Вами!</h3>
 							<div class="callback-form__main callback-form__main--row">
-								<input class="input callback-form__input" type="text" placeholder="Ваше имя">
-								<input class="input callback-form__input" type="text" placeholder="Телефон">
+								<div class="form-field callback-form__item">
+									<input class="input form-field__input" type="text" placeholder="Ваше имя"
+										data-validate="name" data-label="имя">
+									<span class="form-field__error form-field__error--md-absolute"></span>
+								</div>
+								<div class="form-field callback-form__item">
+									<input class="input form-field__input" type="text" placeholder="Телефон"
+										data-validate="phone" data-label="телефон">
+									<span class="form-field__error form-field__error--md-absolute"></span>
+								</div>
 								<button class="btn btn--border btn--sm-primary callback-form__btn">Отправить</button>
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -171,30 +334,47 @@
 				<div class="features__content">
 					<div class="features__header">
 						<h2 class="title2 features__title">Наши решающие преимущества</h2>
-						<a class="link-more features__more" href="#">Заказать просчет Вашего проекта с 3D
-							визуализацией</a>
+						<button class="link-more features__more js-open-popup" data-popup-name="callback">Заказать
+							просчет Вашего проекта с 3D
+							визуализацией</button>
 					</div>
 					<div class="features__list">
-						<div class="features__item">
-							<h3 class="title5 features__item-title">Эстетика на века:</h3>
-							<p class="text features__item-text">кровельные материалы TerraRoof не выцветают, не
-								подвергаются коррозии и не теряют первоначальный вид.</p>
+						<div class="features__item accordion accordion--mobile">
+							<h3 class="title5 features__item-title accordion__btn">Эстетика на века:</h3>
+							<div class="accordion__content">
+								<div class="accordion__main">
+									<p class="text features__item-text">кровельные материалы TerraRoof не выцветают, не
+										подвергаются коррозии и не теряют первоначальный вид.</p>
+								</div>
+							</div>
 						</div>
-						<div class="features__item">
-							<h3 class="title5 features__item-title">Идеальная шумо -&nbsp;и&nbsp;теплоизоляция:</h3>
-							<p class="text features__item-text">под нашей крышей не потревожит ни стук дождя, ни шум
-								метели, температура в Вашем доме комфортна при любой погоде.</p>
+						<div class="features__item accordion accordion--mobile">
+							<h3 class="title5 features__item-title accordion__btn">Идеальная шумо -&nbsp;и&nbsp;теплоизоляция:</h3>
+							<div class="accordion__content">
+								<div class="accordion__main">
+									<p class="text features__item-text">под нашей крышей не потревожит ни стук дождя, ни
+										шум метели, температура в Вашем доме комфортна при любой погоде.</p>
+								</div>
+							</div>
 						</div>
-						<div class="features__item">
-							<h3 class="title5 features__item-title">Гарантийный срок:</h3>
-							<p class="text features__item-text">гарантийный срок от 30 до 100+ лет в зависимости от
-								материала. Выбор TerraRoof - Ваше грамотное вложение средств.</p>
+						<div class="features__item accordion accordion--mobile">
+							<h3 class="title5 features__item-title accordion__btn">Гарантийный срок:</h3>
+							<div class="accordion__content">
+								<div class="accordion__main">
+									<p class="text features__item-text">гарантийный срок от 30 до 100+ лет в зависимости
+										от материала. Выбор TerraRoof - Ваше грамотное вложение средств.</p>
+								</div>
+							</div>
 						</div>
-						<div class="features__item">
-							<h3 class="title5 features__item-title">Безупречный сервис:</h3>
-							<p class="text features__item-text">более 4000 довольных клиентов. Мы ведем проект от
-								бесплатного создания 3Д модели до полного авторского надзора и приема оставшихся
-								материалов. Ваше время - наш приоритет.</p>
+						<div class="features__item accordion accordion--mobile">
+							<h3 class="title5 features__item-title accordion__btn">Безупречный сервис:</h3>
+							<div class="accordion__content">
+								<div class="accordion__main">
+									<p class="text features__item-text">более 4000 довольных клиентов. Мы ведем проект
+										от бесплатного создания 3Д модели до полного авторского надзора и приема
+										оставшихся материалов. Ваше время - наш приоритет.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -210,7 +390,10 @@
 							<p>Многие думают, что Lorem Ipsum - взятый с потолка взятый псевдо-латинский набор слов, но
 								это не совсем так.</p>
 						</div>
-						<a class="btn article__btn" href="#">Узнать подробнее</a>
+						<button class="btn article__btn article__btn--desktop js-open-popup"
+							data-popup-name="callback">Узнать
+							подробнее</button>
+						<a class="btn article__btn article__btn--mobile" href="#">Каталог продукции</a>
 					</div>
 					<img class="article__img article__img--end" src="assets/img/article.png" alt="">
 				</div>
@@ -242,7 +425,7 @@
 								<p class="text text--gray product__text">Его корни уходят в один фрагмент классической
 									латыни 45 года н.э</p>
 								<div class="product__price">15200 тг</div>
-								<button class="btn btn--border product__btn">Заказать</button>
+								<a class="btn btn--border product__btn" href="#callback">Заказать</a>
 							</div>
 						</div>
 						<div class="product products__item">
@@ -265,7 +448,7 @@
 								<p class="text text--gray product__text">Его корни уходят в один фрагмент классической
 									латыни 45 года н.э</p>
 								<div class="product__price">15200 тг</div>
-								<button class="btn btn--border product__btn">Заказать</button>
+								<a class="btn btn--border product__btn" href="#callback">Заказать</a>
 							</div>
 						</div>
 						<div class="product products__item">
@@ -288,7 +471,7 @@
 								<p class="text text--gray product__text">Его корни уходят в один фрагмент классической
 									латыни 45 года н.э</p>
 								<div class="product__price">15200 тг</div>
-								<button class="btn btn--border product__btn">Заказать</button>
+								<a class="btn btn--border product__btn" href="#callback">Заказать</a>
 							</div>
 						</div>
 					</div>
@@ -302,7 +485,8 @@
 					<div class="video-section__body">
 						<h3 class="title3 video-section__title">Индивидуальный тур по крышам – уникальная возможность
 							оценить объекты TerraRoof</h3>
-						<button class="btn btn--xs-border video-section__btn">Узнать подробнее</button>
+						<button class="btn btn--xs-border video-section__btn js-open-popup"
+							data-popup-name="callback">Узнать подробнее</button>
 					</div>
 				</div>
 			</div>
@@ -354,15 +538,23 @@
 					<div class="callback-bg__main">
 						<h2 class="title2 callback-bg__title">30 000 кВ м композитной черепицы, самый большой склад в
 							казахстане</h2>
-						<div class="callback-form callback-form--row callback-bg__form">
+						<form class="callback-form callback-form--row callback-bg__form js-form" autocomplete="off">
 							<h3 class="title5 title5--sm-white callback-form__title">Оставьте заявку,
 								и&nbsp;мы&nbsp;свяжемся&nbsp;с&nbsp;Вами!</h3>
 							<div class="callback-form__main callback-form__main--row">
-								<input class="input callback-form__input" type="text" placeholder="Ваше имя">
-								<input class="input callback-form__input" type="text" placeholder="Телефон">
+								<div class="form-field callback-form__item">
+									<input class="input form-field__input" type="text" placeholder="Ваше имя"
+										data-validate="name" data-label="имя">
+									<span class="form-field__error form-field__error--md-absolute"></span>
+								</div>
+								<div class="form-field callback-form__item">
+									<input class="input form-field__input" type="text" placeholder="Телефон"
+										data-validate="phone" data-label="телефон">
+									<span class="form-field__error form-field__error--md-absolute"></span>
+								</div>
 								<button class="btn btn--border btn--sm-primary callback-form__btn">Отправить</button>
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -391,7 +583,7 @@
 									<img class="images-section__img" src="assets/img/house-images/5.jpg" alt="">
 								</div>
 								<div class="images-section__slide images-section__slide--btn swiper-slide">
-									<button class="images-section__slide-btn">
+									<button class="images-section__slide-btn js-open-popup" data-popup-name="callback">
 										<span>Заказать просчет кровли</span>
 									</button>
 								</div>
@@ -399,7 +591,8 @@
 						</div>
 						<div class="images-section__pagination"></div>
 					</div>
-					<a class="btn images-section__mobile-btn" href="#">Заказать просчет кровли</a>
+					<button class="btn images-section__mobile-btn js-open-popup" data-popup-name="callback">Заказать
+						просчет кровли</button>
 				</div>
 			</div>
 		</section>
@@ -410,7 +603,8 @@
 					<div class="info-section__main">
 						<h2 class="title2 info-section__title">Возьмем на себя <strong>обучение вашей бригады</strong>
 						</h2>
-						<button class="link-more link-more--primary info-section__more">Cвязаться с техническим
+						<button class="link-more link-more--primary info-section__more js-open-popup"
+							data-popup-name="callback">Связаться с техническим
 							отделом</button>
 					</div>
 					<div class="video-player info-section__video" data-src="assets/video/main.mp4">
@@ -550,19 +744,19 @@
 					<p class="text text--white social__text">Подпишитесь на нас и следите за новостями, акциями и
 						спец.предложениями!</p>
 					<div class="social__list">
-						<a class="social__item" href="#">
+						<a class="social__item" href="https://www.instagram.com/">
 							<img class="social__item-icon" src="assets/img/icons/social/instagram.svg" alt="">
 							<span class="social__item-text">Instagram</span>
 						</a>
-						<a class="social__item" href="#">
+						<a class="social__item" href="https://www.facebook.com/">
 							<img class="social__item-icon" src="assets/img/icons/social/facebook.svg" alt="">
 							<span class="social__item-text">Facebook</span>
 						</a>
-						<a class="social__item" href="#">
+						<a class="social__item" href="https://www.youtube.com/">
 							<img class="social__item-icon" src="assets/img/icons/social/youtube.svg" alt="">
 							<span class="social__item-text">YouTube</span>
 						</a>
-						<a class="social__item" href="#">
+						<a class="social__item" href="https://www.whatsapp.com/">
 							<img class="social__item-icon" src="assets/img/icons/social/whatsapp.svg" alt="">
 							<span class="social__item-text">WhatsApp</span>
 						</a>
@@ -577,7 +771,7 @@
 					<div class="gallery__header">
 						<h3 class="title4 gallery__title gallery__title--long">Подпишись на наш инстаграм и следи за
 							новостями, акциями и спец.предложениями!</h3>
-						<a class="btn btn--border gallery__btn" href="https://instagram.com/"
+						<a class="btn btn--border gallery__btn" href="https://www.instagram.com/"
 							target="_blank">Подписаться</a>
 					</div>
 					<div class="gallery__list">
@@ -654,13 +848,13 @@
 					</ul>
 					<div class="social-links footer__social-links">
 						<div class="social-links__list">
-							<a class="social-links__link" href="#">
+							<a class="social-links__link" href="https://www.instagram.com/">
 								<img src="assets/img/icons/social/instagram-white.svg" alt="">
 							</a>
-							<a class="social-links__link" href="#">
+							<a class="social-links__link" href="https://www.facebook.com/">
 								<img src="assets/img/icons/social/facebook-white.svg" alt="">
 							</a>
-							<a class="social-links__link" href="#">
+							<a class="social-links__link" href="https://www.youtube.com/">
 								<img src="assets/img/icons/social/youtube-white.svg" alt="">
 							</a>
 						</div>
@@ -672,21 +866,57 @@
 							<div class="footer__copyright-title">Группа компаний «TWR Group»</div>
 							<div class="footer__copyright-text">© 2023. Все права защищены</div>
 						</div>
-						<div class="footer__company">
+						<a class="footer__company" href="#">
 							<img src="assets/img/footer-companies/terrawood.png" alt="">
-						</div>
-						<div class="footer__company">
+						</a>
+						<a class="footer__company" href="#">
 							<img src="assets/img/footer-companies/noblex.png" alt="">
-						</div>
-						<div class="footer__company">
+						</a>
+						<a class="footer__company" href="#">
 							<img src="assets/img/footer-companies/metrotile.png" alt="">
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		</div>
 	</footer>
+
+	<div class="cookie">
+		<div class="container">
+			<div class="cookie__content">
+				<div class="text cookie__text">Мы используем файлы cookies чтобы сайт работал лучше и быстрее. Надеемся,
+					вы не против.</div>
+				<button class="btn btn--border cookie__btn">Хорошо</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" data-name="callback">
+		<div class="popup__content">
+			<form class="popup-form popup__form js-form" autocomplete="off">
+				<img class="popup-form__logo" src="assets/img/logo.png" alt="">
+				<div class="title5 popup-form__title">Оставьте заявку, и мы свяжемся с Вами!</div>
+				<div class="popup-form__main">
+					<div class="form-field popup-form__item">
+						<input class="input form-field__input" type="text" placeholder="Ваше имя" data-validate="name"
+							data-label="имя">
+						<span class="form-field__error"></span>
+					</div>
+					<div class="form-field popup-form__item">
+						<input class="input form-field__input" type="text" placeholder="Телефон" data-validate="phone"
+							data-label="телефон">
+						<span class="form-field__error"></span>
+					</div>
+					<button class="btn btn--border popup-form__btn">Отправить</button>
+					<div class="popup-form__privacy">Нажимая кнопку “Отправить”, вы соглашаетесь на обработку
+						<a href="#">персональных данных</a>
+					</div>
+				</div>
+			</form>
+			<button class="popup__close"></button>
+		</div>
+	</div>
 
 </body>
 

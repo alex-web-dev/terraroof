@@ -14,6 +14,7 @@
   &__more {
     margin-top: 32px;
     display: inline-block;
+    text-align: left;
     color: #fff;
   }
 
@@ -40,7 +41,7 @@
     }
 
     &-text {
-      margin-top: 10px;
+      padding-top: 10px;
       max-width: 540px;
       color: #e4f5ff;
       line-height: 1.375;
@@ -126,6 +127,21 @@
 
       &-title {
         padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:after {
+          margin-left: 10px;
+          .pseudo-icon('../img/icons/right-white.svg', 9px, 20px);
+          transition: transform .4s;
+        }
+
+        &.accordion__btn--active {
+          &:after {
+            transform: rotate(90deg);
+          }
+        }
       }
 
       &-text {

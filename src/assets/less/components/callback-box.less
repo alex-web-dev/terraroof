@@ -1,7 +1,7 @@
 .callback-box {
   position: fixed;
-  bottom: 37px;
-  right: 37px;
+  bottom: 30px;
+  right: 30px;
   z-index: 30;
 
   &__btn {
@@ -21,8 +21,8 @@
   }
 
   @media (max-width: 1240px) {
-    bottom: 30px;
-    right: 30px;
+    bottom: 25px;
+    right: 25px;
 
     &__btn {
       width: 68px;
@@ -36,29 +36,6 @@
   }
 
   @media (max-width: 991px) {
-    &__btn {
-      width: 54px;
-      height: 54px;
-
-      img {
-        width: 33px;
-        height: 33px;
-      }
-    }
-  }
-
-  @media (max-width: 767px) {
-    bottom: 12px;
-    right: 12px;
-
-    &__btn {
-      width: 48px;
-      height: 48px;
-
-      img {
-        width: 30px;
-        height: 30px;
-      }
-    }
+    display: none;
   }
 }

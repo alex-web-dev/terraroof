@@ -1,22 +1,45 @@
 .accordion {
-    overflow: hidden;
-    &-btn {
+  overflow: hidden;
+
+  &:not(.accordion--mobile) &__btn {
     user-select: none;
     cursor: pointer;
   }
 
-  &__content {
+  &:not(.accordion--mobile) &__content {
     display: none;
   }
 
-  &--activating &__content {
+  &:not(.accordion--mobile).accordion--activating &__content {
     height: 0;
     display: block;
     overflow: hidden;
     transition: height .5s;
   }
 
-  &--active &__content {
+  &:not(.accordion--mobile).accordion--active &__content {
     display: block;
+  }
+
+  @media (max-width: 767px) {
+    &--mobile &__btn {
+      user-select: none;
+      cursor: pointer;
+    }
+  
+    &--mobile &__content {
+      display: none;
+    }
+  
+    &--mobile.accordion--activating &__content {
+      height: 0;
+      display: block;
+      overflow: hidden;
+      transition: height .5s;
+    }
+  
+    &--mobile.accordion--active &__content {
+      display: block;
+    }
   }
 }
