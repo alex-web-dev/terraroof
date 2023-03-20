@@ -10,18 +10,22 @@
   color: #fdf9f9;
   transition: color .3s, background .3s, border .3s;
 
-  &:hover {
-    background-color: transparent;
-    color: @color-primary;
+  @media (min-width: 767.01px) {
+    &:hover {
+      background-color: transparent;
+      color: @color-primary;
+    }
   }
 
   &--border {
     background-color: transparent;
     color: @color-primary;
 
-    &:hover {
-      background-color: @color-primary;
-      color: #fdf9f9;
+    @media (min-width: 767.01px) {
+      &:hover {
+        background-color: @color-primary;
+        color: #fdf9f9;
+      }
     }
   }
 

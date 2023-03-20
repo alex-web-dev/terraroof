@@ -13,4 +13,5 @@ import "./popup.js";
 import "./text-dropdown.js";
 import "./form.js";
 import "./smooth-scroll.js";
+import "./catalog.js";
 import "./footer.js";

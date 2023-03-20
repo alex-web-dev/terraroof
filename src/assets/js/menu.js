@@ -1,5 +1,7 @@
 const $menu = document.querySelector('.menu');
 if ($menu) {
+  $menu.classList.add('menu--show');
+  
   const $menuToggle = $menu.querySelector('.menu__toggle');
   $menuToggle.addEventListener('click', () => {
     $menu.classList.toggle('menu--active');

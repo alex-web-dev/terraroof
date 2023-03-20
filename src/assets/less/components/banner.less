@@ -1,5 +1,5 @@
 .banner {
-  padding: 24px @container-offset 0;
+  padding: 0 @container-offset;
 
   &__content {
     margin: 0 auto;
@@ -21,6 +21,7 @@
   }
 
   &__info {
+    padding-top: 10px;
     padding-right: 30px;
     flex: 1 1 auto;
   }
@@ -168,6 +169,10 @@
   @media (max-width: 991px) {
     &__main {
       padding: 26px 28px;
+    }
+
+    &__info {
+      padding-top: 0;
     }
 
     &__features {

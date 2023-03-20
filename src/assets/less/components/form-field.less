@@ -1,0 +1,46 @@
+.form-field {
+  position: relative;
+
+  &__input {
+    width: 100%;
+  }
+
+  &__error {
+    margin-top: 4px;
+    display: none;
+    font-size: 14px;
+    color: @color-danger;
+
+    &--absolute {
+      position: absolute;
+      left: 0;
+      top: 100%;
+    }
+  }
+
+  &--error &__input {
+    border-color: @color-danger;
+  }
+
+  &--error &__error {
+    display: block;
+  }
+
+  @media (min-width: 767.01px) {
+    &__error {
+      &--md-absolute {
+        position: absolute;
+        left: 0;
+        top: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .form-field {
+      &__error {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -6,8 +6,12 @@
 
   &__img-box {
     position: relative;
-    padding-top: min(68.5%, 284px);
+    padding-top: min(83%, 253px);
     display: block;
+
+    &--large {
+      padding-top: min(68.5%, 284px);
+    }
   }
 
   &__img {
@@ -38,11 +42,32 @@
     max-width: 290px;
   }
 
+  &__status {
+    margin-top: 4px;
+  }
+
+  &__colors {
+    padding-top: 8px;
+    margin: -8px -4px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      margin: 8px 4px 0;
+    }
+  }
+
   &__price {
     margin-top: 12px;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.39;
+
+    &-old {
+      margin-right: 12px;
+      color: @color-gray;
+      text-decoration: line-through;
+    }
   }
 
   &__btn {
@@ -67,7 +92,7 @@
 
   @media (max-width: 767px) {
     &__img-box {
-      padding-top: min(68.5%, 204px);
+      padding-top: min(68.5%, 230px);
     }
 
     &__tags {
