@@ -164,10 +164,10 @@
 		<div class="catalog">
 			<div class="container">
 				<div class="catalog__content">
-					<div class="breadcrumbs product__breadcrumbs">
+					<div class="breadcrumbs product-card__breadcrumbs">
 						<div class="breadcrumbs__list">
 							<div class="breadcrumbs__item">
-								<a class="breadcrumbs__link" href="index.html">Главная</a>
+								<a class="breadcrumbs__link" href="#">Главная</a>
 							</div>
 							<div class="breadcrumbs__item">
 								<span class="breadcrumbs__current">Каталог</span>
@@ -377,54 +377,63 @@
 								<div class="catalog-sidebar__close js-close-catalog-sidebar"></div>
 							</div>
 						</aside>
-						<section class="products catalog__products">
+						<div class="products catalog__products">
 							<div class="products__list">
-								<div class="product products__item">
-									<a class="product__img-box">
-										<img class="product__img" src="assets/img/products/4.jpg" alt="">
-									</a>
-									<div class="product__info">
-										<h3 class="title5 product__name">
+								<div class="product-card products__item">
+									<div class="product-card__img-box">
+										<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+									</div>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
 											<a href="#">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product__status">в наличии</div>
-										<div class="product__price">
-											10020 тг/за лист</div>
-										<a class="btn btn--border product__btn" href="#callback">Заказать</a>
+										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__price">
+											<span class="product-card__price-new">
+												<span class="product-card__price-new-value">10 020 тг/за лист</span>
+											</span>
+										</div>
+										<a class="btn btn--border product-card__btn" href="#">Заказать</a>
 									</div>
 								</div>
-								<div class="product products__item">
-									<a class="product__img-box">
-										<img class="product__img" src="assets/img/products/5.jpg" alt="">
-									</a>
-									<div class="product__info">
-										<h3 class="title5 product__name">
+								<div class="product-card products__item">
+									<div class="product-card__img-box">
+										<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+									</div>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
 											<a href="#">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product__status">в наличии</div>
-										<div class="product__price">
-											10020 тг/за лист</div>
-										<a class="btn btn--border product__btn" href="#callback">Заказать</a>
+										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__price">
+											<span class="product-card__price-new">
+												<span class="product-card__price-new-value">10 020 тг/за лист</span>
+											</span>
+										</div>
+										<a class="btn btn--border product-card__btn" href="#">Заказать</a>
 									</div>
 								</div>
-								<div class="product products__item">
-									<a class="product__img-box">
-										<img class="product__img" src="assets/img/products/6.jpg" alt="">
-									</a>
-									<div class="product__info">
-										<h3 class="title5 product__name">
+								<div class="product-card products__item">
+									<div class="product-card__img-box">
+										<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+									</div>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
 											<a href="#">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product__status">в наличии</div>
-										<div class="product__price">
-											10020 тг/за лист</div>
-										<a class="btn btn--border product__btn" href="#callback">Заказать</a>
+										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__price">
+											<span class="product-card__price-new">
+												<span class="product-card__price-new-value">10 020 тг/за лист</span>
+											</span>
+										</div>
+										<a class="btn btn--border product-card__btn" href="#">Заказать</a>
 									</div>
 								</div>
-								<div class="product products__item">
-									<a class="product__img-box">
-										<img class="product__img" src="assets/img/products/4.jpg" alt="">
-										<div class="tags product__tags">
+								<div class="product-card products__item">
+									<div class="product-card__img-box">
+										<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
 													<img class="tag__icon tag__icon--sm-small"
@@ -433,22 +442,28 @@
 												</div>
 											</div>
 										</div>
-									</a>
-									<div class="product__info">
-										<h3 class="title5 product__name">
+									</div>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
 											<a href="#">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product__status">в наличии</div>
-										<div class="product__price">
-											<span class="product__price-old">12 390</span>
-											10000 тг/за лист</div>
-										<a class="btn btn--border product__btn" href="#callback">Заказать</a>
+										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__price">
+											<span class="product-card__price-old">
+												<span class="product-card__price-old-value">12 390</span>
+											</span>
+											<span class="product-card__price-new">
+												<span class="product-card__price-new-value">10 000</span>
+												тг/за лист
+											</span>
+										</div>
+										<a class="btn btn--border product-card__btn" href="#">Заказать</a>
 									</div>
 								</div>
-								<div class="product products__item">
-									<a class="product__img-box">
-										<img class="product__img" src="assets/img/products/5.jpg" alt="">
-										<div class="tags product__tags">
+								<div class="product-card products__item">
+									<div class="product-card__img-box">
+										<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
 													<img class="tag__icon tag__icon--sm-small"
@@ -457,22 +472,28 @@
 												</div>
 											</div>
 										</div>
-									</a>
-									<div class="product__info">
-										<h3 class="title5 product__name">
+									</div>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
 											<a href="#">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product__status">в наличии</div>
-										<div class="product__price">
-											<span class="product__price-old">12 390</span>
-											10000 тг/за лист</div>
-										<a class="btn btn--border product__btn" href="#callback">Заказать</a>
+										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__price">
+											<span class="product-card__price-old">
+												<span class="product-card__price-old-value">12 390</span>
+											</span>
+											<span class="product-card__price-new">
+												<span class="product-card__price-new-value">10 000</span>
+												тг/за лист
+											</span>
+										</div>
+										<a class="btn btn--border product-card__btn" href="#">Заказать</a>
 									</div>
 								</div>
-								<div class="product products__item">
-									<a class="product__img-box">
-										<img class="product__img" src="assets/img/products/6.jpg" alt="">
-										<div class="tags product__tags">
+								<div class="product-card products__item">
+									<div class="product-card__img-box">
+										<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
 													<img class="tag__icon tag__icon--sm-small"
@@ -481,22 +502,28 @@
 												</div>
 											</div>
 										</div>
-									</a>
-									<div class="product__info">
-										<h3 class="title5 product__name">
+									</div>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
 											<a href="#">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product__status">в наличии</div>
-										<div class="product__price">
-											<span class="product__price-old">12 390</span>
-											10000 тг/за лист</div>
-										<a class="btn btn--border product__btn" href="#callback">Заказать</a>
+										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__price">
+											<span class="product-card__price-old">
+												<span class="product-card__price-old-value">12 390</span>
+											</span>
+											<span class="product-card__price-new">
+												<span class="product-card__price-new-value">10 000</span>
+												тг/за лист
+											</span>
+										</div>
+										<a class="btn btn--border product-card__btn" href="#">Заказать</a>
 									</div>
 								</div>
-								<div class="product products__item">
-									<a class="product__img-box">
-										<img class="product__img" src="assets/img/products/4.jpg" alt="">
-										<div class="tags product__tags">
+								<div class="product-card products__item">
+									<div class="product-card__img-box">
+										<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
 													<img class="tag__icon tag__icon--sm-small"
@@ -505,48 +532,56 @@
 												</div>
 											</div>
 										</div>
-									</a>
-									<div class="product__info">
-										<h3 class="title5 product__name">
+									</div>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
 											<a href="#">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product__status">в наличии</div>
-										<div class="product__colors">
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio"  name="product-1-color" checked>
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/1.jpg" alt="">
-												</span>
-											</label>
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio" name="product-1-color" >
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/2.jpg" alt="">
-												</span>
-											</label>
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio" name="product-1-color" >
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/3.jpg" alt="">
-												</span>
-											</label>
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio" name="product-1-color" >
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/2.jpg" alt="">
-												</span>
-											</label>
+										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__colors">
+											<div class="product-card__colors-list">
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio"  name="product-1-color" data-price="10000" data-price-old="12390" checked>
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/1.jpg" alt="">
+													</span>
+												</label>
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio" name="product-1-color" data-price="9500" data-price-old="11890">
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/2.jpg" alt="">
+													</span>
+												</label>
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio" name="product-1-color" data-price="11000" data-price-old="13590">
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/3.jpg" alt="">
+													</span>
+												</label>
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio" name="product-1-color" data-price="12500" data-price-old="15290">
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/2.jpg" alt="">
+													</span>
+												</label>
+											</div>
 										</div>
-										<div class="product__price">
-											<span class="product__price-old">12 390</span>
-											10000 тг/за лист</div>
-										<a class="btn btn--border product__btn" href="#callback">Заказать</a>
+										<div class="product-card__price">
+											<span class="product-card__price-old">
+												<span class="product-card__price-old-value">12 390</span>
+											</span>
+											<span class="product-card__price-new">
+												<span class="product-card__price-new-value">10 000</span>
+												тг/за лист
+											</span>
+										</div>
+										<a class="btn btn--border product-card__btn" href="#">Заказать</a>
 									</div>
 								</div>
-								<div class="product products__item">
-									<a class="product__img-box">
-										<img class="product__img" src="assets/img/products/5.jpg" alt="">
-										<div class="tags product__tags">
+								<div class="product-card products__item">
+									<div class="product-card__img-box">
+										<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
 													<img class="tag__icon tag__icon--sm-small"
@@ -555,42 +590,50 @@
 												</div>
 											</div>
 										</div>
-									</a>
-									<div class="product__info">
-										<h3 class="title5 product__name">
+									</div>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
 											<a href="#">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product__status">в наличии</div>
-										<div class="product__colors">
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio"  name="product-2-color" checked>
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/1.jpg" alt="">
-												</span>
-											</label>
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio" name="product-2-color" >
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/2.jpg" alt="">
-												</span>
-											</label>
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio" name="product-2-color" >
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/3.jpg" alt="">
-												</span>
-											</label>
+										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__colors">
+											<div class="product-card__colors-list">
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio"  name="product-2-color" data-price="10000" data-price-old="12390" checked>
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/1.jpg" alt="">
+													</span>
+												</label>
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio" name="product-2-color" data-price="9500" data-price-old="11890">
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/2.jpg" alt="">
+													</span>
+												</label>
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio" name="product-2-color" data-price="11000" data-price-old="13590">
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/3.jpg" alt="">
+													</span>
+												</label>
+											</div>
 										</div>
-										<div class="product__price">
-											<span class="product__price-old">12 390</span>
-											10000 тг/за лист</div>
-										<a class="btn btn--border product__btn" href="#callback">Заказать</a>
+										<div class="product-card__price">
+											<span class="product-card__price-old">
+												<span class="product-card__price-old-value">12 390</span>
+											</span>
+											<span class="product-card__price-new">
+												<span class="product-card__price-new-value">10 000</span>
+												тг/за лист
+											</span>
+										</div>
+										<a class="btn btn--border product-card__btn" href="#">Заказать</a>
 									</div>
 								</div>
-								<div class="product products__item">
-									<a class="product__img-box">
-										<img class="product__img" src="assets/img/products/6.jpg" alt="">
-										<div class="tags product__tags">
+								<div class="product-card products__item">
+									<div class="product-card__img-box">
+										<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
 													<img class="tag__icon tag__icon--sm-small"
@@ -599,40 +642,48 @@
 												</div>
 											</div>
 										</div>
-									</a>
-									<div class="product__info">
-										<h3 class="title5 product__name">
+									</div>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
 											<a href="#">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product__status">в наличии</div>
-										<div class="product__colors">
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio"  name="product-3-color" checked>
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/1.jpg" alt="">
-												</span>
-											</label>
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio" name="product-3-color" >
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/2.jpg" alt="">
-												</span>
-											</label>
-											<label class="checkbox-color product__colors-item">
-												<input class="checkbox-color__input" type="radio" name="product-3-color" >
-												<span class="checkbox-color__switch">
-													<img src="assets/img/products/colors/3.jpg" alt="">
-												</span>
-											</label>
+										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__colors">
+											<div class="product-card__colors-list">
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio"  name="product-3-color" data-price="10000" data-price-old="12390" checked>
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/1.jpg" alt="">
+													</span>
+												</label>
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio" name="product-3-color" data-price="9500" data-price-old="11890">
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/2.jpg" alt="">
+													</span>
+												</label>
+												<label class="checkbox-color product-card__colors-item">
+													<input class="checkbox-color__input js-product-card-color" type="radio" name="product-3-color" data-price="11000" data-price-old="13590">
+													<span class="checkbox-color__switch">
+														<img src="assets/img/products/colors/3.jpg" alt="">
+													</span>
+												</label>
+											</div>
 										</div>
-										<div class="product__price">
-											<span class="product__price-old">12 390</span>
-											10000 тг/за лист</div>
-										<a class="btn btn--border product__btn" href="#callback">Заказать</a>
+										<div class="product-card__price">
+											<span class="product-card__price-old">
+												<span class="product-card__price-old-value">12 390</span>
+											</span>
+											<span class="product-card__price-new">
+												<span class="product-card__price-new-value">10 000</span>
+												тг/за лист
+											</span>
+										</div>
+										<a class="btn btn--border product-card__btn" href="#">Заказать</a>
 									</div>
 								</div>
 							</div>
-						</section>
+						</div>
 					</div>
 				</div>
 			</div>

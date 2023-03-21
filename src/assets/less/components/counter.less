@@ -1,0 +1,44 @@
+.counter {
+  padding: 10px 32px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #E0E5ED;
+  border-radius: 6px;
+
+  &__input {
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    outline: none;
+
+    &[type="number"]::-webkit-outer-spin-button,
+    &[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+
+  &__minus,
+  &__plus {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 8px 20px;
+    height: 44px;
+
+    &__input {
+      font-size: 16px;
+    }
+
+    &__minus,
+    &__plus {
+      font-size: 16px;
+    }
+  }
+}

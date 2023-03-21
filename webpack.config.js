@@ -28,7 +28,8 @@ const optimization = () => {
 }
 
 const htmlPageNames = [
-	'catalog'
+	'catalog',
+	'product-card'
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

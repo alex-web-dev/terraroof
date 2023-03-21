@@ -7,6 +7,11 @@
     }
   }
 
+  &__subtitle {
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+
   &__list {
     margin: -32px -10px 0;
     display: flex;
@@ -16,17 +21,29 @@
   &__item {
     margin: 32px 10px 0;
     width: calc(100% / 12 * 4 - 20px);
+
+    &--col-4 {
+      width: calc(25% - 20px);
+    }
   }
 
   @media (max-width: 1240px) {
     &__title {
       margin-bottom: 32px;
     }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
   }
 
   @media (max-width: 991px) {
     &__title {
       margin-bottom: 24px;
+    }
+
+    &__subtitle {
+      margin-bottom: 16px;
     }
 
     &__list {
@@ -48,6 +65,10 @@
 
     &__title {
       display: none;
+    }
+
+    &__subtitle {
+      margin-bottom: 12px;
     }
 
     &__list {

@@ -1,0 +1,29 @@
+.checkbox-text {
+  user-select: none;
+
+  &__input {
+    display: none;
+  }
+
+  &__switch {
+    padding: 3px 10px;
+    border: 1px solid #e0e5ed;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: @color-gray;
+    cursor: pointer;
+  }
+
+  &__input:checked~&__switch {
+    background: @color-primary;
+    border-color: @color-primary;
+    color: #fff;
+  }
+
+  @media (max-width: 1240px) {
+    &__switch {
+      font-size: 12px;
+    }
+  }
+}

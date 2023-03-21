@@ -1,14 +1,15 @@
 .checkbox-color {
+  user-select: none;
+
   &__input {
     display: none;
   }
 
   &__switch {
-    margin-top: 3px;
     position: relative;
+    margin-top: 3px;
+    padding: 4px;
     flex: 0 0 auto;
-    width: 49px;
-    height: 49px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,19 +24,29 @@
     }
   }
 
+  &__text {
+    margin-left: 6px;
+    margin-right: 9px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
   &__input:checked~&__switch {
     border-color: @color-primary;
   }
 
   @media (max-width: 767px) {
     &__switch {
-      width: 44px;
-      height: 44px;
-
       img {
         width: 34px;
         height: 34px;
       }
+    }
+
+    &__text {
+      margin-left: 5px;
+      margin-right: 8px;
+      font-size: 13px;
     }
   }
 }
