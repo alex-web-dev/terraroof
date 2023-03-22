@@ -1,0 +1,134 @@
+.blog-item {
+  padding: 42px 0;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(12, 1fr);
+  border-bottom: 1px solid #e0e5ed;
+
+  &__title {
+    margin-bottom: 14px;
+    padding-right: 6px;
+    grid-column: 1/9;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    padding-right: 6px;
+    padding-top: 5px;
+    grid-column: 1/9;
+  }
+
+  &__elem {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+
+    &-link {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  }
+
+  &__more {
+    margin-top: 52px;
+    display: inline-block;
+  }
+
+  &__img {
+    position: relative;
+    margin-left: 14px;
+    padding-top: min(257px, 60.25%);
+    border-radius: 16px;
+    overflow: hidden;
+    grid-column: 9/13;
+    grid-row: 1/5;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--high {
+      padding-top: min(318px, 74.75%);
+    }
+  }
+
+  @media (max-width: 1240px) {
+    padding: 35px 0;
+
+    &__info {
+      padding-top: 0;
+    }
+
+    &__elem {
+      &:not(:first-child) {
+        margin-top: 7px;
+      }
+
+      &-link {
+        font-size: 16px;
+      }
+    }
+
+    &__more {
+      margin-top: 36px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 30px 0;
+
+    &__elem {
+      &:not(:first-child) {
+        margin-top: 6px;
+      }
+
+      &-link {
+        font-size: 15px;
+      }
+    }
+
+    &__more {
+      margin-top: 28px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px 0;
+    grid-template-columns: 1fr;
+
+    &__title {
+      grid-row: 1/2;
+    }
+
+    &__img {
+      margin-left: 0;
+      padding-top: min(220px, 60%);
+      grid-column: 1/2;
+      grid-row: 2/3;
+
+      &--high {
+        padding-top: min(250px, 75%);
+      }
+    }
+
+    &__elems {
+      margin-top: 16px;
+    }
+
+    &__elem {
+      &-link {
+        font-size: 14px;
+      }
+    }
+
+    &__more {
+      margin-top: 18px;
+    }
+  }
+}
