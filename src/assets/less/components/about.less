@@ -1,0 +1,153 @@
+.about {
+  &__main {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "text img";
+    grid-template-columns: 51% 49%;
+  }
+
+  &__title {
+    grid-area: title;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    border-bottom: 0.5px solid rgba(#000, 0.2);
+  }
+
+  &__text-content {
+    grid-area: text;
+    line-height: 1.5;
+
+    p,
+    ul,
+    ol {
+      &:not(:first-child) {
+        margin-top: 18px;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    grid-area: img;
+    align-self: flex-start;
+    margin-left: 35px;
+    padding-top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 270px;
+      max-height: calc(100% - 40px);
+      max-width: calc(100% - 40px);
+      object-fit: contain;
+    }
+  }
+
+  &__features {
+    margin-top: 102px;
+  }
+
+  &__elems {
+    margin-top: 72px;
+  }
+
+  &__more {
+    margin-top: 102px;
+  }
+
+  @media (max-width: 1240px) {
+    &__title {
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+    }
+    
+    &__img {
+      margin-left: 25px;
+
+      img {
+        width: 210px;
+      }
+    }
+
+    &__features,
+    &__more {
+      margin-top: 70px;
+    }
+
+    &__elems {
+      margin-top: 45px;
+    }
+  } 
+
+  @media (max-width: 991px) {
+    &__title {
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+    }
+
+    &__img {
+      margin-left: 15px;
+
+      img {
+        width: 160px;
+      }
+    }
+
+    &__features,
+    &__more {
+      margin-top: 42px;
+    }
+
+    &__elems {
+      margin-top: 35px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: @content-sm-max-width;
+    }
+
+    &__title {
+      margin-bottom: 18px;
+      padding-top: 14px;
+      font-size: 24px;
+    }
+
+    &__main {
+      grid-template-areas:
+        "title"
+        "img"
+        "text";
+      grid-template-columns: 1fr;
+    }
+
+    &__img {
+      margin-left: 0;
+      margin-bottom: 16px;
+    }
+
+    
+    &__features,
+    &__more {
+      margin-top: 24px;
+    }
+
+    &__elems {
+      margin-top: 24px;
+    }
+  }
+}

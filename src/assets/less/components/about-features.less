@@ -1,0 +1,96 @@
+.about-features {
+  &__title {
+    max-width: 810px;
+    line-height: 1.5;
+  }
+
+  &__text {
+    margin-top: 24px;
+    max-width: 810px;
+  }
+
+  &__list {
+    margin: -20px -10px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:not(:first-child) {
+      padding-top: 32px;
+    }
+  }
+
+  &__item {
+    margin: 20px 10px 0;
+    display: flex;
+    align-items: flex-start;
+    width: calc(50% - 20px);
+    line-height: 1.4;
+
+    &:before {
+      margin-top: 3px;
+      margin-right: 10px;
+      flex: 0 0 auto;
+      .pseudo-icon('../img/icons/check-fill.svg', 20px, 20px);
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__text {
+      margin-top: 20px;
+    }
+
+    &__list {
+      &:not(:first-child) {
+        padding-top: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__text {
+      margin-top: 16px;
+    }
+
+    &__list {
+      &:not(:first-child) {
+        padding-top: 20px;
+      }
+    }
+
+    &__item {
+      font-size: 15px;
+
+      &:before {
+        margin-top: 2px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__text {
+      margin-top: 12px;
+    }
+
+    &__list {
+      margin: -8px -10px 0;
+
+      &:not(:first-child) {
+        padding-top: 16px;
+      }
+    }
+
+    &__item {
+      font-size: 14px;
+      margin: 8px 10px 0;
+      width: calc(100% - 20px);
+
+      &:before {
+        margin-top: 2px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
