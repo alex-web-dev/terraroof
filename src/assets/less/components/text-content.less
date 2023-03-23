@@ -1,33 +1,52 @@
 .text-content {
-  line-height: 1.4;
+  line-height: 1.375;
   
-  p {
+  p,
+  ul,
+  ol {
     &:not(:first-child) {
       margin-top: 24px;
+    }
+  }
+
+  ul {
+    padding-left: 24px;
+    list-style-type: disc;
+
+    li {
+      list-style-image: url(../../img/icons/ul-marker.svg);
     }
   }
 
   @media (max-width: 991px) {
     font-size: 15px;
 
-    p:not(:first-child) {
-      margin-top: 18px;
+    p,
+    ul,
+    ol {
+      &:not(:first-child) {
+        margin-top: 18px;
+      }
+    }
+
+    ul {
+      padding-left: 22px;
     }
   }
 
   @media (max-width: 767px) {
     font-size: 14px;
 
-    p:not(:first-child) {
-      margin-top: 14px;
+    p,
+    ul,
+    ol {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
     }
-  }
 
-  @media (max-width: 480px) {
-    font-size: 13px;
-
-    p:not(:first-child) {
-      margin-top: 12px;
+    ul {
+      padding-left: 20px;
     }
   }
 }
