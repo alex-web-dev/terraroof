@@ -6,16 +6,25 @@
   border-bottom: 1px solid #e0e5ed;
 
   &__title {
+    position: relative;
     margin-bottom: 14px;
+    padding-top: 5px;
     padding-right: 6px;
+    max-width: 760px;
     grid-column: 1/9;
     line-height: 1.5;
     text-transform: uppercase;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
   }
 
   &__info {
     padding-right: 6px;
-    padding-top: 5px;
     grid-column: 1/9;
   }
 
@@ -27,7 +36,21 @@
     &-link {
       font-size: 18px;
       line-height: 1.4;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
     }
+  }
+
+  &__text {
+    max-width: 555px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 
   &__more {
@@ -61,7 +84,7 @@
   @media (max-width: 1240px) {
     padding: 35px 0;
 
-    &__info {
+    &__title {
       padding-top: 0;
     }
 
@@ -103,11 +126,17 @@
     grid-template-columns: 1fr;
 
     &__title {
+      padding-right: 0;
       grid-row: 1/2;
+    }
+
+    &__info {
+      padding-right: 0;
     }
 
     &__img {
       margin-left: 0;
+      margin-bottom: 16px;
       padding-top: min(220px, 60%);
       grid-column: 1/2;
       grid-row: 2/3;
@@ -115,10 +144,6 @@
       &--high {
         padding-top: min(250px, 75%);
       }
-    }
-
-    &__elems {
-      margin-top: 16px;
     }
 
     &__elem {
