@@ -34,6 +34,7 @@ const htmlPageNames = [
 	'blog-all-articles',
 	'blog-article',
 	'about',
+	'contacts',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
