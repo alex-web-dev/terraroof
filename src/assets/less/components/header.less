@@ -17,11 +17,19 @@
     margin-left: auto;
   }
 
+  &__user-nav {
+    margin-left: 34px;
+  }
+
   &__contact {
-    margin-left: 66px;
+    margin-left: 10px;
     transform: translateX(22px);
     display: flex;
     align-items: flex-start;
+
+    &:hover &-icon {
+      animation: pulse-small 1.5s infinite;
+    }
 
     &-icon {
       margin-right: 8px;
@@ -49,13 +57,8 @@
 
   @media (max-width: 1340px) {
     &__contact {
+      margin-left: 32px;
       transform: translateX(0);
-    }
-  }
-
-  @media (max-width: 1240px) {
-    &__contact {
-      margin-left: 60px;
     }
   }
 
@@ -66,6 +69,15 @@
 
     &__contact {
       display: none;
+    }
+
+    &__user-nav {
+      margin-left: auto;
+    }
+
+    &__menu {
+      margin-left: 18px;
+      order: 2;
     }
   }
 

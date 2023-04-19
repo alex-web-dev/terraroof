@@ -1,9 +1,8 @@
 .contact-item {
-  padding: 33px;
+  padding: 25px;
   background-color: #ffffff;
   border: 1px solid #e0e5ed;
   border-radius: 6px;
-  text-align: center;
 
   &__icon {
     margin: 0 auto 12px;
@@ -25,21 +24,21 @@
   &__name {
     margin: 0 auto;
     max-width: 240px;
+    text-align: center;
     line-height: 1.5;
     color: @color-gray;
   }
 
   &__value {
     margin: 12px auto 0;
-    display: inline-block;
+    display: block;
     max-width: 240px;
+    text-align: center;
     font-size: 24px;
     line-height: 1.375;
   }
 
   @media (max-width: 1240px) {
-    padding: 30px;
-
     &__value {
       font-size: 22px;
     }

@@ -1,0 +1,62 @@
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-small {
+  0% {
+    box-shadow: 0 0 0 0px rgba(116, 228, 116, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 12px rgba(207, 241, 207, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(116, 228, 116, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 40px rgba(207, 241, 207, 0);
+  }
+}
+
+@keyframes pulse-mark {
+  0% {
+    box-shadow: 0 0 0 0px rgba(221, 221, 221, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 16px rgba(207, 241, 207, 0);
+  }
+}

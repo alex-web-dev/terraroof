@@ -18,6 +18,10 @@
     &[type="number"]::-webkit-inner-spin-button {
       -webkit-appearance: none;
     }
+
+    &--text-big {
+      font-size: 20px;
+    }
   }
 
   &__minus,
@@ -28,17 +32,33 @@
     line-height: 20px;
   }
 
-  @media (max-width: 767px) {
+  &--high {
+    height: 60px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  @media (max-width: 991px) {
     padding: 8px 20px;
     height: 44px;
 
     &__input {
       font-size: 16px;
+
+      &--text-big {
+        font-size: 18px;
+      }
     }
 
     &__minus,
     &__plus {
       font-size: 16px;
+    }
+
+    &--high {
+      height: 46px;
+      padding-left: 19px;
+      padding-right: 19px;
     }
   }
 }

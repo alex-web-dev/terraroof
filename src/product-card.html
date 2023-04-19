@@ -147,6 +147,14 @@
 						<span class="menu__lines"></span>
 					</button>
 				</nav>
+				<div class="user-nav header__user-nav">
+					<a class="user-nav__link" href="cart.html">
+						<img src="assets/img/icons/cart.svg" alt="">
+					</a>
+					<a class="user-nav__link" href="#">
+						<img src="assets/img/icons/user.svg" alt="">
+					</a>
+				</div>
 				<a class="header__contact" href="tel:+77776333330">
 					<div class="header__contact-icon">
 						<img src="assets/img/icons/phone.svg" alt="">
@@ -182,7 +190,8 @@
 						<div class="product__images">
 							<div class="product__images-color product__images-color--active igallery">
 								<div class="product__main-img-box">
-									<img class="product__main-img igallery__btn igallery__img" src="assets/img/product/1.jpg" alt="">
+									<img class="product__main-img igallery__btn igallery__img"
+										src="assets/img/product/1.jpg" alt="">
 									<div class="tags product__tags">
 										<div class="tags__list tags__list--jc-end">
 											<div class="tag tags__item">
@@ -204,7 +213,8 @@
 							</div>
 							<div class="product__images-color igallery">
 								<div class="product__main-img-box">
-									<img class="product__main-img igallery__btn igallery__img" src="assets/img/product/3.jpg" alt="">
+									<img class="product__main-img igallery__btn igallery__img"
+										src="assets/img/product/3.jpg" alt="">
 									<div class="tags product__tags">
 										<div class="tags__list tags__list--jc-end">
 											<div class="tag tag--sm-small tags__item">
@@ -226,7 +236,8 @@
 							</div>
 							<div class="product__images-color igallery">
 								<div class="product__main-img-box">
-									<img class="product__main-img igallery__btn igallery__img" src="assets/img/product/2.jpg" alt="">
+									<img class="product__main-img igallery__btn igallery__img"
+										src="assets/img/product/2.jpg" alt="">
 									<div class="tags product__tags">
 										<div class="tags__list tags__list--jc-end">
 											<div class="tag tag--sm-small tags__item">
@@ -541,6 +552,18 @@
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field callback-form__item">
+								<div class="select">
+									<select class="select__field form-field__input" data-validate="empty"
+										data-label="город">
+										<option value="" disabled selected>Город</option>
+										<option value="1">Москва</option>
+										<option value="2">Астана</option>
+										<option value="3">Новосибирск</option>
+									</select>
+								</div>
+								<span class="form-field__error"></span>
+							</div>
+							<div class="form-field callback-form__item">
 								<textarea class="input input--area form-field__input"
 									placeholder="Комментарий"></textarea>
 							</div>
@@ -600,13 +623,19 @@
 							<div class="footer__copyright-text">© 2023. Все права защищены</div>
 						</div>
 						<a class="footer__company" href="#">
-							<img src="assets/img/footer-companies/terrawood.png" alt="">
+							<img class="footer__company-img" src="assets/img/footer-companies/terrawood.png" alt="">
+							<img class="footer__company-img footer__company-img--hover"
+								src="assets/img/footer-companies/terrawood-hover.png" alt="">
 						</a>
 						<a class="footer__company" href="#">
-							<img src="assets/img/footer-companies/noblex.png" alt="">
+							<img class="footer__company-img" src="assets/img/footer-companies/noblex.png" alt="">
+							<img class="footer__company-img footer__company-img--hover"
+								src="assets/img/footer-companies/noblex-hover.png" alt="">
 						</a>
 						<a class="footer__company" href="#">
-							<img src="assets/img/footer-companies/metrotile.png" alt="">
+							<img class="footer__company-img" src="assets/img/footer-companies/metrotile.png" alt="">
+							<img class="footer__company-img footer__company-img--hover"
+								src="assets/img/footer-companies/metrotile-hover.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -639,6 +668,17 @@
 					<div class="form-field popup-form__item">
 						<input class="input form-field__input" type="text" placeholder="Телефон" data-validate="phone"
 							data-label="телефон">
+						<span class="form-field__error"></span>
+					</div>
+					<div class="form-field popup-form__item">
+						<div class="select">
+							<select class="select__field form-field__input" data-validate="empty" data-label="город">
+								<option value="" disabled selected>Город</option>
+								<option value="1">Москва</option>
+								<option value="2">Астана</option>
+								<option value="3">Новосибирск</option>
+							</select>
+						</div>
 						<span class="form-field__error"></span>
 					</div>
 					<button class="btn btn--border popup-form__btn">Отправить</button>

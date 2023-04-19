@@ -1,0 +1,29 @@
+.select {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    right: 16px;
+    top: calc(50%);
+    transform: translateY(-50%);
+    .pseudo-icon('../img/icons/down.svg', 17px, 8px);
+    pointer-events: none;
+  }
+
+  &__field {
+    padding: 15px 35px 15px 18px;
+    width: 100%;
+    background: #F8F8F8;
+    border: 1px solid #E0E5ED;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: @color-gray;
+    cursor: pointer;
+
+    option[value=""][disabled] {
+      display: none;
+    }
+  }
+}

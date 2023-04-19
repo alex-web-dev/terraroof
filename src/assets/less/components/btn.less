@@ -29,6 +29,19 @@
     }
   }
 
+  &--white {
+    background-color: #fff;
+    color: @color-primary;
+    border-color: #fff;
+
+    @media (min-width: 767.01px) {
+      &:hover {
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+
   @media (max-width: 991px) {
     padding: 12px 30px;
     font-size: 15px;
