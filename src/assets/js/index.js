@@ -1,7 +1,11 @@
 import "@/assets/less/styles.less";
 
 import "./wow.js";
+import "./simplebar.js";
 import "./menu.js";
+import "./catalog-menu.js";
+import "./load-img.js";
+import "./date-input.js";
 import "./banner.js";
 import "./categories-section.js";
 import "./images-section.js";
@@ -21,4 +25,5 @@ import "./counter.js";
 import "./igallery.js";
 import "./tabs.js";
 import "./map.js";
+import "./team.js";
 import "./footer.js";

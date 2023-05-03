@@ -25,9 +25,21 @@
     line-height: 1.5;
 
     &:after {
-      margin-left: 8px;
+      margin-left: auto;
       flex: 0 0 auto;
       .pseudo-icon('../img/icons/right-black.svg', 9px, 17px);
+    }
+
+    &-text {
+      margin-right: 8px;
+    }
+
+    &-img {
+      margin-right: 8px;
+      width: 38px;
+      height: 38px;
+      object-fit: cover;
+      border-radius: 6px;
     }
   }
 
@@ -66,7 +78,7 @@
     justify-content: center;
 
     &:before {
-      .pseudo-icon('../img/icons/close.svg', 14px, 14px)
+      .pseudo-icon('../img/icons/close.svg', 14px, 14px);
     }
   }
 
@@ -88,8 +100,8 @@
     z-index: 40;
     transform: translateX(-100%);
     display: none;
-    width: 70vw;
-    max-width: 222px;
+    width: 100%;
+    max-width: 260px;
     height: 100%;
     background: #fff;
     opacity: 0;

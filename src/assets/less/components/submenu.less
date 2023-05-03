@@ -1,16 +1,19 @@
 .submenu {
-  padding: 28px 44px 28px 19px;
   border-radius: 6px;
   background-color: #fff;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eeeeee;
 
   &__item {
-    &:not(:first-child) {
-      margin-top: 11px;
-    }
-
     &-link {
+      padding: 12px 16px;
       display: flex;
       align-items: center;
+      font-size: 14px;
+
+      &:hover {
+        background-color: #eee;
+      }
     }
 
     &-img {
@@ -64,6 +67,8 @@
 
   @media (max-width: 991px) {
     padding: 0;
+    box-shadow: none;
+    border: none;
 
     &__item {
       &:not(:first-child) {

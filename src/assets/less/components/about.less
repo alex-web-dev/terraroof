@@ -4,7 +4,12 @@
     grid-template-areas:
       "title title"
       "text img";
+    align-items: flex-start;
     grid-template-columns: 51% 49%;
+
+    &--video {
+      grid-template-columns: 46.8% 53.2%;
+    }
   }
 
   &__title {
@@ -52,6 +57,12 @@
       max-width: calc(100% - 40px);
       object-fit: contain;
     }
+  }
+
+  &__video {
+    margin-left: 30px;
+    padding-top: 68.3%;
+    border-radius: 16px;
   }
 
   &__features {
@@ -135,12 +146,12 @@
       grid-template-columns: 1fr;
     }
 
-    &__img {
+    &__img,
+    &__video {
       margin-left: 0;
       margin-bottom: 16px;
     }
 
-    
     &__features,
     &__more {
       margin-top: 24px;

@@ -9,6 +9,11 @@ $sections.forEach($section => {
     speed: 600,
     enabled: true,
     slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+    },
     pagination: {
       el: ".images-section__pagination",
       clickable: true,
@@ -36,6 +41,7 @@ $sections.forEach($section => {
       effect: 'fade',
       initialSlide: randomArray[index],
       allowTouchMove: false,
+      touchMoveStopPropagation: true,
       speed: 600,
       fadeEffect: {
         crossFade: true

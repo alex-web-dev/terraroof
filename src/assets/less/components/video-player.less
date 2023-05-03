@@ -29,9 +29,24 @@
     top: 50%;
     z-index: 2;
     transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:before {
-      .pseudo-icon('../img/icons/play.svg', 32px, 32px);
+      .pseudo-icon('../img/icons/play.svg', 32px, 32px, block);
+    }
+
+    &--2 {
+      width: 54px;
+      height: 54px;
+      background: rgba(#fff, 0.4);
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+
+      &:before {
+        .pseudo-icon('../img/icons/play-simple.svg', 22px, 24px, block);
+      } 
     }
   }
 
@@ -43,7 +58,20 @@
     display: none;
   }
 
-  @media (max-width: 1240px) {
-    
+  @media (max-width: 767px) {
+    &__play {
+      &--2 {
+        width: 44px;
+        height: 44px;
+        background: rgba(#fff, 0.4);
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+  
+        &:before {
+          width: 18px;
+          height: 20px;
+        } 
+      }
+    }
   }
 }

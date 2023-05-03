@@ -25,101 +25,152 @@
 							<li class="menu__item">
 								<a class="menu__link" href="index.html">Главная</a>
 							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="about.html">О компании</a>
-							</li>
 							<li class="menu__item menu__item--has-submenu">
-								<a class="menu__link menu__link--active" href="#">Каталог</a>
+								<a class="menu__link" href="#">
+									О компании
+									<svg class="menu__link-icon" width="8" height="14" viewBox="0 0 8 14" fill="none">
+										<path d="M1.5 1.1665L6.5 6.99984L1.5 12.8332" stroke-width="1.5"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
 								<ul class="submenu menu__submenu">
 									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-icon">
-												<img src="assets/img/icons/sale-second.svg" alt="">
-											</div>
-											<span class="submenu__item-text">Акции</span>
-										</a>
+										<a class="submenu__item-link" href="about-us.html">О нас</a>
 									</li>
 									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/1.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Керамическая черепица</span>
-										</a>
+										<a class="submenu__item-link" href="cooperate.html">Сотрудничество</a>
 									</li>
 									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/2.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Композитная черепица</span>
-										</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/3.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Гибкая (битумная) черепица</span>
-										</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/4.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Металлочерепица</span>
-										</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/5.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Медная кровля</span>
-										</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/5.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Солнечная крыша</span>
-										</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/6.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Цинк-титановая кровля</span>
-										</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/5.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Кровельная гидроизоляция</span>
-										</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/7.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Водосточные системы</span>
-										</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__item-link" href="catalog.html">
-											<div class="submenu__item-img">
-												<img src="assets/img/catalog-menu/5.jpg" alt="">
-											</div>
-											<span class="submenu__item-text">Аксессуары</span>
-										</a>
+										<a class="submenu__item-link" href="news.html">Новости</a>
 									</li>
 								</ul>
+							</li>
+							<li class="menu__item menu__item--has-submenu">
+								<a class="menu__link menu__link--active open-catalog-menu" href="#">Каталог</a>
+								<div class="catalog-menu menu__catalog">
+									<div class="catalog-menu__content" data-simplebar>
+										<div class="title4 catalog-menu__title">Каталог</div>
+										<div class="catalog-menu__list">
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/1.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Композитная черепица</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/2.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Керамическая черепица</div>
+											</a>
+											<a class="catalog-menu__item catalog-menu__item--big" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/3.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Композитная черепица</div>
+												<div class="tags catalog-menu__item-tags">
+													<div class="tags__list">
+														<div class="tag tags__item">
+															<img class="tag__icon" src="assets/img/icons/sale.svg" alt="">
+															<span class="tag__text">акция</span>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/4.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Композитная черепица</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/5.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Сланцевая кровля</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/6.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Фальцевая кровля</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/7.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Цинк-титановая кровля</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/8.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Битумная черепица</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/9.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Композитная черепица</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/10.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Сланцевая кровля</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/11.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Солнечная крыша</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/12.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Медная кровля</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/13.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Мансардные окна</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/14.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Водосточные системы</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/15.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Кровельные комплектующие</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/16.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Софиты для подшивки кровли</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/17.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Чердачные лестницы</div>
+											</a>
+											<a class="catalog-menu__item" href="catalog.html">
+												<div class="catalog-menu__item-img">
+													<img src="assets/img/catalog-menu/18.png" alt="">
+												</div>
+												<div class="catalog-menu__item-title">Кровельная вентиляция</div>
+											</a>
+										</div>
+										<button class="catalog-menu__close"></button>
+									</div>
+								</div>
 							</li>
 							<li class="menu__item">
 								<a class="menu__link" href="blog.html">Блог</a>
@@ -219,7 +270,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Керамическая черепица</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/1.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Керамическая черепица</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -238,7 +292,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Композитная черепица</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/2.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Композитная черепица</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -250,7 +307,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Гибкая (битумная) черепица</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/3.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Гибкая (битумная) черепица</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -262,7 +322,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Металлочерепица</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/4.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Металлочерепица</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -274,7 +337,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Медная кровля</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Медная кровля</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -286,7 +352,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Фальцевая кровля</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Фальцевая кровля</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -298,7 +367,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Сланцевая кровля</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Сланцевая кровля</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -310,7 +382,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Солнечная крыша</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Солнечная крыша</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -322,7 +397,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Цинк-титановая кровля</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Цинк-титановая кровля</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -334,7 +412,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Кровельная гидроизоляция</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Кровельная гидроизоляция</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -346,7 +427,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Водосточные системы</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Водосточные системы</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -358,7 +442,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Мансардные окна</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Мансардные окна</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -370,7 +457,10 @@
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">Аксессуары</button>
+										<button class="catalog-sidebar__btn">
+											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<span class="catalog-sidebar__btn-text">Аксессуары</span>
+										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
 												<label class="checkbox">
@@ -736,15 +826,8 @@
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field callback-form__item">
-								<div class="select">
-									<select class="select__field form-field__input" data-validate="empty"
-										data-label="город">
-										<option value="" disabled selected>Город</option>
-										<option value="1">Москва</option>
-										<option value="2">Астана</option>
-										<option value="3">Новосибирск</option>
-									</select>
-								</div>
+								<input class="input form-field__input" type="text" placeholder="Город"
+									data-validate="empty" data-label="город">
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field callback-form__item">
@@ -855,14 +938,8 @@
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
-						<div class="select">
-							<select class="select__field form-field__input" data-validate="empty" data-label="город">
-								<option value="" disabled selected>Город</option>
-								<option value="1">Москва</option>
-								<option value="2">Астана</option>
-								<option value="3">Новосибирск</option>
-							</select>
-						</div>
+						<input class="input form-field__input" type="text" placeholder="Город" data-validate="empty"
+							data-label="город">
 						<span class="form-field__error"></span>
 					</div>
 					<button class="btn btn--border popup-form__btn">Отправить</button>

@@ -1,0 +1,44 @@
+.team {
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__slider {
+    user-select: none;
+
+    &-box {
+      position: relative;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__slider {
+      &-box {
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: @content-sm-max-width;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__slider {
+      &-box {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

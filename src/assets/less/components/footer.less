@@ -1,5 +1,5 @@
 .footer {
-  padding: 46px 0 34px;
+  padding: 46px 0 8px;
   background-color: @color-black;
 
   &__top {
@@ -39,7 +39,7 @@
 
   &__bottom {
     margin-top: 34px;
-    padding-top: 38px;
+    padding-top: 12px;
     border-top: 1px solid rgba(#fff, 0.5);
 
     &-main {
@@ -69,21 +69,24 @@
 
   &__company {
     position: relative;
-    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 130px;
 
     &-img {
-      transition: opacity .4s, visibility .4s;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       display: block;
+      object-fit: contain;
+      transition: opacity .4s, visibility .4s;
 
       &--hover {
-        position: absolute;
-        left: 0;
-        top: 0;
         visibility: hidden;
         opacity: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
       }
     }
 
@@ -99,7 +102,7 @@
   }
 
   @media (max-width: 1240px) {
-    padding: 36px 0 24px;
+    padding-top: 36px;
 
     &__logo {
       &-img {
@@ -120,7 +123,6 @@
     &__bottom {
       margin-top: 24px;
       padding-right: 0;
-      padding-top: 28px;
     }
 
     &__copyright {
@@ -136,14 +138,16 @@
     }
 
     &__company {
+      height: 105px;
+
       &-img {
-        transform: scale(0.85);
+        transform: scale(0.85) translate(-60%, -60%);
       }
     }
   }
 
   @media (max-width: 991px) {
-    padding: 32px 0 22px;
+    padding-top: 32px;
 
     &__logo {
       &-img {
@@ -166,7 +170,6 @@
 
     &__bottom {
       margin-top: 18px;
-      padding-top: 24px;
     }
 
     &__copyright {
@@ -179,6 +182,10 @@
       &-text {
         font-size: 12px;
       }
+    }
+
+    &__company {
+      height: 90px;
     }
   }
 
@@ -219,7 +226,7 @@
 
     &__bottom {
       margin-top: 15px;
-      padding-top: 0;
+      padding-top: 8px;
 
       &-main {
         flex-wrap: wrap;
@@ -227,7 +234,7 @@
     }
 
     &__copyright {
-      margin-top: 18px;
+      margin-top: 6px;
       width: 50%;
       flex: none;
 
@@ -238,7 +245,7 @@
       }
 
       &-text {
-        margin-top: 24px;
+        margin-top: 12px;
       }
     }
 
@@ -247,16 +254,18 @@
     }
 
     &__company {
-      margin-top: 18px;
+      margin-top: 6px;
       margin-right: 0;
       width: 50%;
+      height: 45px;
 
       &:nth-last-child(2) {
         order: 2;
       }
 
       &-img {
-        transform: scale(1);
+        transform: scale(1) translate(0, -50%);
+        left: 0;
         max-width: 92px;
         max-height: 34px;
       }
