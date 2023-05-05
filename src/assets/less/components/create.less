@@ -1,4 +1,11 @@
 .create {
+  &__body {
+    &--line-top {
+      padding-top: 72px;
+      border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+
   &__content {
     padding: 80px 66px 54px 72px;
     display: grid;
@@ -45,12 +52,24 @@
   }
 
   @media (max-width: 1240px) {
+    &__body {
+      &--line-top {
+        padding-top: 52px;
+      }
+    }
+
     &__content {
       padding: 50px 40px 45px 40px;
     }
   }
 
   @media (max-width: 991px) {
+    &__body {
+      &--line-top {
+        padding-top: 42px;
+      }
+    }
+
     &__content {
       padding: 35px 30px 30px 30px;
     }
@@ -61,6 +80,12 @@
   }
 
   @media (max-width: 767px) {
+    &__body {
+      &--line-top {
+        padding-top: 32px;
+      }
+    }
+
     &__content {
       margin-left: auto;
       margin-right: auto;
