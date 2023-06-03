@@ -36,20 +36,8 @@ export function moveElement(options) {
 }
 
 export function getScrollbarWidth() {
-  const div = document.createElement('div');
-  div.style.overflowY = 'scroll';
-  div.style.position = 'absolute';
-  div.style.zIndex = '-10';
-  div.style.top = '-20px';
-  div.style.width = '20px';
-  div.style.height = '20px';
-
-  document.body.append(div);
-  let scrollWidth = div.offsetWidth - div.clientWidth;
-
-  div.remove();
-
-  return scrollWidth;
+  const documentWidth = document.documentElement.clientWidth;
+  return Math.abs(window.innerWidth - documentWidth);
 }
 
 export default {
