@@ -71,7 +71,8 @@
 												<div class="tags catalog-menu__item-tags">
 													<div class="tags__list">
 														<div class="tag tags__item">
-															<img class="tag__icon" src="assets/img/icons/sale.svg" alt="">
+															<img class="tag__icon" src="assets/img/icons/sale.svg"
+																alt="">
 															<span class="tag__text">акция</span>
 														</div>
 													</div>
@@ -187,7 +188,7 @@
 								<span class="menu__contact-text">Заказать расчет</span>
 							</a>
 							<a class="menu__contact" href="tel:+77776333330">
-								<div class="menu__contact-icon menu__contact-icon--second">
+								<div class="menu__contact-icon">
 									<img src="assets/img/icons/phone.svg" alt="">
 								</div>
 								<span class="menu__contact-text menu__contact-text--gray">+7 (777) 633 33 30</span>
@@ -233,7 +234,17 @@
 							</div>
 						</div>
 					</div>
-					<h1 class="title4 catalog__title">Композитная черепица</h1>
+					<div class="catalog__header">
+						<h1 class="title4 catalog__title">Композитная черепица</h1>
+						<div class="catalog__companies" data-simplebar>
+							<div class="catalog__companies-list">
+								<img class="catalog__company" src="assets/img/companies/1.png" alt="">
+								<img class="catalog__company" src="assets/img/companies/2.png" alt="">
+								<img class="catalog__company" src="assets/img/companies/3.png" alt="">
+								<img class="catalog__company" src="assets/img/companies/4.png" alt="">
+							</div>
+						</div>
+					</div>
 					<div class="btn catalog__open-sidebar js-open-catalog-sidebar">
 						<img src="assets/img/icons/menu-white.svg" alt="">
 						Каталог
@@ -243,7 +254,7 @@
 							<div class="catalog-sidebar__content">
 								<div class="catalog-sidebar__title">Каталог</div>
 								<ul class="catalog-sidebar__list">
-									<li class="catalog-sidebar__item">
+									<!-- <li class="catalog-sidebar__item">
 										<button class="catalog-sidebar__btn">Акции</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
@@ -268,7 +279,7 @@
 												</label>
 											</li>
 										</ul>
-									</li>
+									</li> -->
 									<li class="catalog-sidebar__item">
 										<button class="catalog-sidebar__btn">
 											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/1.jpg" alt="">
@@ -485,13 +496,19 @@
 										<h3 class="title5 product-card__name">
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
 										<div class="product-card__price">
 											<span class="product-card__price-new">
 												<span class="product-card__price-new-value">10 020 тг/за лист</span>
 											</span>
 										</div>
-										<a class="btn btn--border product-card__btn" href="product-card.html">Заказать</a>
+										<div class="product-card__footer">
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
 									</div>
 								</div>
 								<div class="product-card products__item">
@@ -502,13 +519,19 @@
 										<h3 class="title5 product-card__name">
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
 										<div class="product-card__price">
 											<span class="product-card__price-new">
 												<span class="product-card__price-new-value">10 020 тг/за лист</span>
 											</span>
 										</div>
-										<a class="btn btn--border product-card__btn" href="product-card.html">Заказать</a>
+										<div class="product-card__footer">
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
 									</div>
 								</div>
 								<div class="product-card products__item">
@@ -519,13 +542,19 @@
 										<h3 class="title5 product-card__name">
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
 										<div class="product-card__price">
 											<span class="product-card__price-new">
 												<span class="product-card__price-new-value">10 020 тг/за лист</span>
 											</span>
 										</div>
-										<a class="btn btn--border product-card__btn" href="product-card.html">Заказать</a>
+										<div class="product-card__footer">
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
 									</div>
 								</div>
 								<div class="product-card products__item">
@@ -545,7 +574,10 @@
 										<h3 class="title5 product-card__name">
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
 										<div class="product-card__price">
 											<span class="product-card__price-old">
 												<span class="product-card__price-old-value">12 390</span>
@@ -555,7 +587,10 @@
 												тг/за лист
 											</span>
 										</div>
-										<a class="btn btn--border product-card__btn" href="product-card.html">Заказать</a>
+										<div class="product-card__footer">
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
 									</div>
 								</div>
 								<div class="product-card products__item">
@@ -575,7 +610,10 @@
 										<h3 class="title5 product-card__name">
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
 										<div class="product-card__price">
 											<span class="product-card__price-old">
 												<span class="product-card__price-old-value">12 390</span>
@@ -585,7 +623,10 @@
 												тг/за лист
 											</span>
 										</div>
-										<a class="btn btn--border product-card__btn" href="product-card.html">Заказать</a>
+										<div class="product-card__footer">
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
 									</div>
 								</div>
 								<div class="product-card products__item">
@@ -605,7 +646,10 @@
 										<h3 class="title5 product-card__name">
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
 										<div class="product-card__price">
 											<span class="product-card__price-old">
 												<span class="product-card__price-old-value">12 390</span>
@@ -615,7 +659,10 @@
 												тг/за лист
 											</span>
 										</div>
-										<a class="btn btn--border product-card__btn" href="product-card.html">Заказать</a>
+										<div class="product-card__footer">
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
 									</div>
 								</div>
 								<div class="product-card products__item">
@@ -635,7 +682,10 @@
 										<h3 class="title5 product-card__name">
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
 										<div class="product-card__colors">
 											<div class="product-card__colors-list">
 												<label class="checkbox-color product-card__colors-item">
@@ -681,7 +731,10 @@
 												тг/за лист
 											</span>
 										</div>
-										<a class="btn btn--border product-card__btn" href="product-card.html">Заказать</a>
+										<div class="product-card__footer">
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
 									</div>
 								</div>
 								<div class="product-card products__item">
@@ -701,7 +754,10 @@
 										<h3 class="title5 product-card__name">
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
 										<div class="product-card__colors">
 											<div class="product-card__colors-list">
 												<label class="checkbox-color product-card__colors-item">
@@ -739,7 +795,10 @@
 												тг/за лист
 											</span>
 										</div>
-										<a class="btn btn--border product-card__btn" href="product-card.html">Заказать</a>
+										<div class="product-card__footer">
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
 									</div>
 								</div>
 								<div class="product-card products__item">
@@ -759,7 +818,10 @@
 										<h3 class="title5 product-card__name">
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
-										<div class="text text--gray product-card__status">в наличии</div>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
 										<div class="product-card__colors">
 											<div class="product-card__colors-list">
 												<label class="checkbox-color product-card__colors-item">
@@ -797,7 +859,29 @@
 												тг/за лист
 											</span>
 										</div>
-										<a class="btn btn--border product-card__btn" href="product-card.html">Заказать</a>
+										<div class="product-card__footer">
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products__info">
+								<div class="accordion">
+									<div class="faq-item products__info-item accordion">
+										<button class="faq-item__header accordion__btn">
+											Подробнее о товарах
+											<span class="faq-item__arrow"></span>
+										</button>
+										<div class="accordion__content">
+											<div class="accordion__main faq-item__main">
+												<div class="text faq-item__text">
+													<p>Многие думают, что Lorem Ipsum - взятый с потолка взятый
+														псевдо-латинский набор слов, но это не совсем так. Его корни
+														уходят в один фрагмент классической латыни 45 года н.э</p>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -821,8 +905,8 @@
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field callback-form__item">
-								<input class="input form-field__input" type="text" placeholder="Телефон"
-									data-validate="phone" data-label="телефон">
+								<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+									data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field callback-form__item">
@@ -845,9 +929,9 @@
 		</div>
 
 		<div class="callback-box">
-			<button class="icon-circle callback-box__btn">
+			<a class="icon-circle callback-box__btn" href="#">
 				<img class="icon-circle__icon" src="assets/img/icons/whatsapp.svg" alt="">
-			</button>
+			</a>
 		</div>
 	</main>
 
@@ -933,8 +1017,8 @@
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
-						<input class="input form-field__input" type="text" placeholder="Телефон" data-validate="phone"
-							data-label="телефон">
+						<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+							data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">

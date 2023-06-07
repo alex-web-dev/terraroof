@@ -71,7 +71,8 @@
 												<div class="tags catalog-menu__item-tags">
 													<div class="tags__list">
 														<div class="tag tags__item">
-															<img class="tag__icon" src="assets/img/icons/sale.svg" alt="">
+															<img class="tag__icon" src="assets/img/icons/sale.svg"
+																alt="">
 															<span class="tag__text">акция</span>
 														</div>
 													</div>
@@ -187,7 +188,7 @@
 								<span class="menu__contact-text">Заказать расчет</span>
 							</a>
 							<a class="menu__contact" href="tel:+77776333330">
-								<div class="menu__contact-icon menu__contact-icon--second">
+								<div class="menu__contact-icon">
 									<img src="assets/img/icons/phone.svg" alt="">
 								</div>
 								<span class="menu__contact-text menu__contact-text--gray">+7 (777) 633 33 30</span>
@@ -291,8 +292,8 @@
 						<div class="callback-form__main">
 							<div class="form-field callback-form__item">
 								<label class="form-field__label" for="form-city">Город</label>
-								<input class="input form-field__input" id="form-city" type="text"
-									data-validate="empty" data-label="город">
+								<input class="input form-field__input" id="form-city" type="text" data-validate="empty"
+									data-label="город">
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field callback-form__item">
@@ -309,8 +310,8 @@
 							</div>
 							<div class="form-field callback-form__item">
 								<label class="form-field__label" for="form-phone">Телефон</label>
-								<input class="input form-field__input" id="form-phone" type="text" data-validate="phone"
-									data-label="телефон">
+								<input class="input form-field__input js-imask" id="form-phone" type="text"
+									data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 								<span class="form-field__error"></span>
 							</div>
 							<button class="btn callback-form__btn callback-form__btn--mt-32">Продолжить</button>
@@ -321,9 +322,9 @@
 		</div>
 
 		<div class="callback-box">
-			<button class="icon-circle callback-box__btn">
+			<a class="icon-circle callback-box__btn" href="#">
 				<img class="icon-circle__icon" src="assets/img/icons/whatsapp.svg" alt="">
-			</button>
+			</a>
 		</div>
 	</main>
 
@@ -409,20 +410,20 @@
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
-						<input class="input form-field__input" type="text" placeholder="Телефон" data-validate="phone"
-							data-label="телефон">
+						<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+							data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
 						<input class="input form-field__input" type="text" placeholder="Город" data-validate="empty"
 							data-label="город">
 						<span class="form-field__error"></span>
-					</input>
-					<button class="btn btn--border popup-form__btn">Отправить</button>
-					<div class="popup-form__privacy">Нажимая кнопку “Отправить”, вы соглашаетесь на обработку
-						<a href="#">персональных данных</a>
+						</input>
+						<button class="btn btn--border popup-form__btn">Отправить</button>
+						<div class="popup-form__privacy">Нажимая кнопку “Отправить”, вы соглашаетесь на обработку
+							<a href="#">персональных данных</a>
+						</div>
 					</div>
-				</div>
 			</form>
 			<button class="popup__close"></button>
 		</div>

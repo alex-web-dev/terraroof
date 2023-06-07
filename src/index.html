@@ -170,6 +170,8 @@
 											</a>
 										</div>
 										<button class="catalog-menu__close"></button>
+										<img class="catalog-menu__scroll-icon" src="assets/img/icons/mouse-scroll.svg"
+											alt="">
 									</div>
 								</div>
 							</li>
@@ -188,7 +190,7 @@
 								<span class="menu__contact-text">Заказать расчет</span>
 							</a>
 							<a class="menu__contact" href="tel:+77776333330">
-								<div class="menu__contact-icon menu__contact-icon--second">
+								<div class="menu__contact-icon">
 									<img src="assets/img/icons/phone.svg" alt="">
 								</div>
 								<span class="menu__contact-text menu__contact-text--gray">+7 (777) 633 33 30</span>
@@ -224,8 +226,10 @@
 		<section class="banner">
 			<div class="banner__content">
 				<div class="banner__info">
-					<h1 class="title1 banner__title wow animate__fadeIn" data-wow-delay="0.3s" data-wow-offset="265">TerraRoof.</h1>
-					<h2 class="title2 banner__subtitle wow animate__fadeIn" data-wow-delay="0.65s" data-wow-offset="265">Кровля для самых требовательных</h2>
+					<h1 class="title1 banner__title wow animate__fadeIn" data-wow-delay="0.3s" data-wow-offset="265">
+						TerraRoof.</h1>
+					<h2 class="title2 banner__subtitle wow animate__fadeIn" data-wow-delay="0.65s"
+						data-wow-offset="265">Кровля для самых требовательных</h2>
 					<div class="banner__features">
 						<div class="banner__features-title">Полностью за наш счет:</div>
 						<div class="banner__features-list">
@@ -248,16 +252,13 @@
 				<div class="banner__slider swiper">
 					<div class="swiper-wrapper">
 						<div class="banner__slide swiper-slide">
-							<img src="assets/img/banner-img.jpg" alt="">
+							<img src="assets/img/banner/1.jpg" alt="">
 						</div>
 						<div class="banner__slide swiper-slide">
-							<img src="assets/img/banner-img.jpg" alt="">
+							<img src="assets/img/banner/2.jpg" alt="">
 						</div>
 						<div class="banner__slide swiper-slide">
-							<img src="assets/img/banner-img.jpg" alt="">
-						</div>
-						<div class="banner__slide swiper-slide">
-							<img src="assets/img/banner-img.jpg" alt="">
+							<img src="assets/img/banner/3.jpg" alt="">
 						</div>
 					</div>
 					<div class="banner__pagination"></div>
@@ -310,8 +311,8 @@
 									<span class="form-field__error form-field__error--md-absolute"></span>
 								</div>
 								<div class="form-field callback-form__item">
-									<input class="input form-field__input" type="text" placeholder="Телефон"
-										data-validate="phone" data-label="телефон">
+									<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+										data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 									<span class="form-field__error form-field__error--md-absolute"></span>
 								</div>
 								<button class="btn btn--border btn--sm-primary callback-form__btn">Отправить</button>
@@ -436,7 +437,7 @@
 					<div class="video-section__body">
 						<h3 class="title3 video-section__title">Индивидуальный тур по крышам – уникальная возможность
 							оценить объекты TerraRoof</h3>
-						<button class="btn btn--xs-border video-section__btn js-open-popup"
+						<button class="btn btn--hover-border-white btn--xs-border video-section__btn js-open-popup"
 							data-popup-name="time">Подобрать время</button>
 					</div>
 				</div>
@@ -488,7 +489,8 @@
 			<div class="container">
 				<div class="callback-bg__content" style="background-image: url('assets/img/callback-bg2.jpg');">
 					<div class="callback-bg__main">
-						<h2 class="title2 callback-bg__title">Самый большой склад <br> в Центральной Азии более 30 000 кв.м
+						<h2 class="title2 callback-bg__title">Самый большой склад <br> в Центральной Азии более 30 000
+							кв.м
 						</h2>
 						<form class="callback-form callback-form--row callback-bg__form js-form" autocomplete="off">
 							<h3 class="title5 title5--sm-white callback-form__title">Отгрузим день в день, свяжитесь с
@@ -500,8 +502,8 @@
 									<span class="form-field__error form-field__error--md-absolute"></span>
 								</div>
 								<div class="form-field callback-form__item">
-									<input class="input form-field__input" type="text" placeholder="Телефон"
-										data-validate="phone" data-label="телефон">
+									<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+										data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 									<span class="form-field__error form-field__error--md-absolute"></span>
 								</div>
 								<button class="btn btn--border btn--sm-primary callback-form__btn">Отправить</button>
@@ -751,7 +753,7 @@
 								</div>
 								<div class="images-section__slide images-section__slide--btn swiper-slide">
 									<button class="images-section__slide-btn js-open-popup" data-popup-name="callback">
-										<span>Подобрать</span>
+										<span>Выбрать наиболее подходящий материал</span>
 										<img src="assets/img/icons/logo-blue.svg" alt="">
 									</button>
 								</div>
@@ -826,14 +828,14 @@
 						<h2 class="title2 faq__title">Ответы на ваши вопросы</h2>
 					</div>
 					<div class="faq__list">
-						<div class="faq__item accordion">
-							<button class="faq__item-header accordion__btn">
+						<div class="faq-item faq__item accordion">
+							<button class="faq-item__header accordion__btn">
 								Хочу заменить старую кровлю. Как это будет происходить?
-								<span class="faq__item-arrow"></span>
+								<span class="faq-item__arrow"></span>
 							</button>
 							<div class="accordion__content">
-								<div class="accordion__main faq__item-main">
-									<div class="text faq__item-text">
+								<div class="accordion__main faq-item__main">
+									<div class="text faq-item__text">
 										<p>Мы предоставляем услугу ре-руфинга (замены устаревшей кровли) в любое время
 											года. В среднем процесс занимает от 2-ух недель, в течение которых смена
 											кровельного покрытия происходит частями. Таким образом, хозяевам дома нет
@@ -846,14 +848,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="faq__item accordion">
-							<button class="faq__item-header accordion__btn">
+						<div class="faq-item faq__item accordion">
+							<button class="faq-item__header accordion__btn">
 								При какой погоде можно делать монтаж?
-								<span class="faq__item-arrow"></span>
+								<span class="faq-item__arrow"></span>
 							</button>
 							<div class="accordion__content">
-								<div class="accordion__main faq__item-main">
-									<div class="text faq__item-text">
+								<div class="accordion__main faq-item__main">
+									<div class="text faq-item__text">
 										<p>Переживаете, что для монтажа кровли нужны идеальные погодные условия? Рады
 											заверить вас, что это не так. Компания TerraRoof имеет опыт и знания, чтобы
 											заменить старую кровлю или уложить новый кровельный материал в любых
@@ -867,14 +869,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="faq__item accordion">
-							<button class="faq__item-header accordion__btn">
+						<div class="faq-item faq__item accordion">
+							<button class="faq-item__header accordion__btn">
 								Какой материал подходит для экстремальных погодных условий?
-								<span class="faq__item-arrow"></span>
+								<span class="faq-item__arrow"></span>
 							</button>
 							<div class="accordion__content">
-								<div class="accordion__main faq__item-main">
-									<div class="text faq__item-text">
+								<div class="accordion__main faq-item__main">
+									<div class="text faq-item__text">
 										<p>Вся представленная компанией TerraRoof продукция подобрана исходя из знания
 											резко-континентального климата Казахстана. Все бренды, включая европейские
 											марки кровельных покрытий, могут десятилетиями выдерживать воздействие
@@ -889,14 +891,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="faq__item accordion">
-							<button class="faq__item-header accordion__btn">
+						<div class="faq-item faq__item accordion">
+							<button class="faq-item__header accordion__btn">
 								Точно ли все работы будут сделаны в срок? Какие я получу гарантии?
-								<span class="faq__item-arrow"></span>
+								<span class="faq-item__arrow"></span>
 							</button>
 							<div class="accordion__content">
-								<div class="accordion__main faq__item-main">
-									<div class="text faq__item-text">
+								<div class="accordion__main faq-item__main">
+									<div class="text faq-item__text">
 										<p>Репутация компании TerraRoof является для нас первостепенной, поэтому мы
 											всегда выполняем все договорные обязательства точно, качественно и в срок.
 											Кроме того, наши клиенты защищены гарантиями непосредственно производителей
@@ -967,7 +969,7 @@
 			</div>
 		</section>
 
-		<section class="gallery main__gallery">
+		<!-- <section class="gallery main__gallery">
 			<div class="container">
 				<div class="gallery__content">
 					<div class="gallery__header">
@@ -989,9 +991,9 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section class="gallery main__section">
+		<!-- <section class="gallery main__section">
 			<div class="container">
 				<div class="gallery__content">
 					<div class="gallery__header">
@@ -1021,12 +1023,12 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<div class="callback-box">
-			<button class="icon-circle callback-box__btn">
+			<a class="icon-circle callback-box__btn" href="#">
 				<img class="icon-circle__icon" src="assets/img/icons/whatsapp.svg" alt="">
-			</button>
+			</a>
 		</div>
 	</main>
 
@@ -1112,8 +1114,8 @@
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
-						<input class="input form-field__input" type="text" placeholder="Телефон" data-validate="phone"
-							data-label="телефон">
+						<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+							data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
@@ -1143,8 +1145,8 @@
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
-						<input class="input form-field__input form-field__input--date" type="text" placeholder="Дата" data-validate="empty"
-							data-label="дата">
+						<input class="input form-field__input form-field__input--date" type="text" placeholder="Дата"
+							data-validate="empty" data-label="дата">
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">

@@ -21,6 +21,10 @@
     border-radius: 15px;
   }
 
+  &__content.simplebar-scrollable-y &__scroll-icon {
+    display: block;
+  }
+
   &__title {
     margin-bottom: 14px;
   }
@@ -114,6 +118,17 @@
     }
   }
 
+  &__scroll-icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 40px;
+    max-height: 60px;
+    object-fit: contain;
+    display: none;
+  }
+
   &--show {
     display: block;
   }
@@ -146,6 +161,12 @@
         left: 18px;
         top: 18px;
       }
+    }
+
+    &__scroll-icon {
+      right: 8px;
+      max-width: 25px;
+      max-height: 38px;
     }
   }
 

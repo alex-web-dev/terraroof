@@ -65,7 +65,7 @@ function validateEmpty($input) {
 }
 
 function validatePhone($input) {
-  if (!/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test($input.value)) {
+  if (!/(?:\+|\d)[\d\-\(\) ]{14,}\d/g.test($input.value)) {
     return false;
   }
 

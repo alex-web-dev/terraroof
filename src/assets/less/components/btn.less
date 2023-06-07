@@ -12,7 +12,7 @@
 
   @media (min-width: 767.01px) {
     &:hover {
-      background-color: transparent;
+      background-color: #fff;
       color: @color-primary;
     }
   }
@@ -42,6 +42,14 @@
     }
   }
 
+  &--hover-border-white {
+    @media (min-width: 767.01px) {
+      &:hover {
+        border-color: #fff;
+      }
+    }
+  }
+
   @media (max-width: 991px) {
     padding: 12px 30px;
     font-size: 15px;
@@ -62,7 +70,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 479px) {
     &--xs-border {
       background-color: transparent;
       color: @color-primary;

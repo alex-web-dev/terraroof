@@ -188,7 +188,7 @@
 								<span class="menu__contact-text">Заказать расчет</span>
 							</a>
 							<a class="menu__contact" href="tel:+77776333330">
-								<div class="menu__contact-icon menu__contact-icon--second">
+								<div class="menu__contact-icon">
 									<img src="assets/img/icons/phone.svg" alt="">
 								</div>
 								<span class="menu__contact-text menu__contact-text--gray">+7 (777) 633 33 30</span>
@@ -243,9 +243,11 @@
 									</ul>
 									<p>Оставляйте заявки, будем развиваться вместе!</p>
 								</div>
+								<button class="btn cooperate-item__btn js-open-popup" data-popup-name="someone"
+									data-popup-target="dealer">Стать диллером</button>
 							</div>
 							<div class="cooperate-item__img">
-								<img class="load-img" src="assets/img/banner-img.jpg" alt="">
+								<img class="load-img" src="assets/img/cooperate/1.jpg" alt="">
 							</div>
 						</div>
 						<div class="cooperate-item cooperate__item">
@@ -258,9 +260,11 @@
 										сжатые сроки. Наши договорные обязательства никогда не нарушаются. </p>
 									<p>Давайте обсудим условия сотрудничества?</p>
 								</div>
+								<button class="btn cooperate-item__btn js-open-popup" data-popup-name="someone"
+									data-popup-target="architect">Для архитекторов</button>
 							</div>
 							<div class="cooperate-item__img">
-								<img class="load-img" src="assets/img/article.jpg" alt="">
+								<img class="load-img" src="assets/img/cooperate/2.jpg" alt="">
 							</div>
 						</div>
 						<div class="cooperate-item cooperate__item">
@@ -273,9 +277,11 @@
 										повышение квалификации и обучение от лучших мировых производителей. </p>
 									<p>Оставьте заявку, и наш специалист по кадрам свяжется с вами!</p>
 								</div>
+								<button class="btn cooperate-item__btn js-open-popup" data-popup-name="someone"
+									data-popup-target="roofer">Кровельщикам</button>
 							</div>
 							<div class="cooperate-item__img">
-								<img class="load-img" src="assets/img/callback-bg.jpg" alt="">
+								<img class="load-img" src="assets/img/cooperate/3.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -297,8 +303,8 @@
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field callback-form__item">
-								<input class="input form-field__input" type="text" placeholder="Телефон"
-									data-validate="phone" data-label="телефон">
+								<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+									data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field callback-form__item">
@@ -321,9 +327,9 @@
 		</div>
 
 		<div class="callback-box">
-			<button class="icon-circle callback-box__btn">
+			<a class="icon-circle callback-box__btn" href="#">
 				<img class="icon-circle__icon" src="assets/img/icons/whatsapp.svg" alt="">
-			</button>
+			</a>
 		</div>
 	</main>
 
@@ -409,13 +415,40 @@
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
-						<input class="input form-field__input" type="text" placeholder="Телефон" data-validate="phone"
-							data-label="телефон">
+						<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+							data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
 						<input class="input form-field__input" type="text" placeholder="Город" data-validate="empty"
 							data-label="город">
+						<span class="form-field__error"></span>
+					</div>
+					<button class="btn btn--border popup-form__btn">Отправить</button>
+					<div class="popup-form__privacy">Нажимая кнопку “Отправить”, вы соглашаетесь на обработку
+						<a href="#">персональных данных</a>
+					</div>
+				</div>
+			</form>
+			<button class="popup__close"></button>
+		</div>
+	</div>
+
+	<div class="popup" data-name="someone">
+		<div class="popup__content">
+			<form class="popup-form popup__form js-form" autocomplete="off">
+				<img class="popup-form__logo" src="assets/img/logo.png" alt="">
+				<div class="title5 popup-form__title">Оставьте заявку, и мы свяжемся с Вами!</div>
+				<div class="popup-form__main">
+					<input class="popup__target-input" type="hidden" name="target">
+					<div class="form-field popup-form__item">
+						<input class="input form-field__input" type="text" placeholder="Ваше имя" data-validate="name"
+							data-label="имя">
+						<span class="form-field__error"></span>
+					</div>
+					<div class="form-field popup-form__item">
+						<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+							data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 						<span class="form-field__error"></span>
 					</div>
 					<button class="btn btn--border popup-form__btn">Отправить</button>

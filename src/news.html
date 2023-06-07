@@ -188,7 +188,7 @@
 								<span class="menu__contact-text">Заказать расчет</span>
 							</a>
 							<a class="menu__contact" href="tel:+77776333330">
-								<div class="menu__contact-icon menu__contact-icon--second">
+								<div class="menu__contact-icon">
 									<img src="assets/img/icons/phone.svg" alt="">
 								</div>
 								<span class="menu__contact-text menu__contact-text--gray">+7 (777) 633 33 30</span>
@@ -313,8 +313,8 @@
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field callback-form__item">
-								<input class="input form-field__input" type="text" placeholder="Телефон"
-									data-validate="phone" data-label="телефон">
+								<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+									data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 								<span class="form-field__error"></span>
 							</div>
 							<div class="form-field popup-form__item">
@@ -337,9 +337,9 @@
 		</div>
 
 		<div class="callback-box">
-			<button class="icon-circle callback-box__btn">
+			<a class="icon-circle callback-box__btn" href="#">
 				<img class="icon-circle__icon" src="assets/img/icons/whatsapp.svg" alt="">
-			</button>
+			</a>
 		</div>
 	</main>
 
@@ -425,8 +425,8 @@
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">
-						<input class="input form-field__input" type="text" placeholder="Телефон" data-validate="phone"
-							data-label="телефон">
+						<input class="input form-field__input js-imask" type="text" placeholder="Телефон"
+							data-validate="phone" data-label="телефон" data-mask="+{7}(000)000-00-00">
 						<span class="form-field__error"></span>
 					</div>
 					<div class="form-field popup-form__item">

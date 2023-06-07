@@ -1,6 +1,7 @@
 import "@/assets/less/styles.less";
 
 import "./wow.js";
+import "./imask.js";
 import "./simplebar.js";
 import "./menu.js";
 import "./catalog-menu.js";
@@ -24,6 +25,5 @@ import "./product.js";
 import "./counter.js";
 import "./igallery.js";
 import "./tabs.js";
-import "./map.js";
 import "./team.js";
 import "./footer.js";

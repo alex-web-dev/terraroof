@@ -10,6 +10,12 @@ $openBtns.forEach($btn => {
     }
 
     $popup.classList.add('popup--active');
+
+    const target = $btn.dataset.popupTarget;
+    if (target) {
+      const $targetInput = $popup.querySelector('.popup__target-input');
+      $targetInput.value = target;
+    }
   });
 });
 
