@@ -1,0 +1,129 @@
+.addition-menu {
+  display: flex;
+
+  &__item {
+    position: relative;
+
+    &:not(:first-child) {
+      margin-left: 32px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    transition: color 0.3s;
+
+    &-icon {
+      transform: rotate(90deg);
+      margin-left: 8px;
+      flex: 0 0 auto;
+      stroke: #2d2b33;
+      transition: stroke 0.3s;
+    }
+
+    @media (min-width: 992px) {
+      &:hover {
+        color: @color-second;
+      }
+
+      &:hover &-icon {
+        stroke: @color-second;
+      }
+    }
+
+    &--active {
+      font-weight: 700;
+      color: @color-second;
+    }
+
+    &--active &-icon {
+      stroke: @color-second;
+    }
+  }
+
+  &__item--has-submenu &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__submenu {
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+    width: 260px;
+    display: none;
+  }
+
+  &__item--active &__submenu {
+    display: block;
+  }
+
+  @media (max-width: 991px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &__item {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+    }
+
+    &__item:not(:first-child) &__link {
+      border-top: 1px solid #e0e5ed;
+    }
+    
+    &__item:last-child &__link {
+      border-bottom: 1px solid #e0e5ed;
+    }
+
+    &__item--has-submenu.addition-menu__item--active &__link {
+      &-icon {
+        transform: rotate(90deg);
+      }
+    }
+
+    &__link {
+      padding: 11px 25px 11px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 1.375;
+
+      &-icon {
+        transform: rotate(0);
+      }
+
+      &:before {
+        left: 18px;
+        right: unset;
+        font-weight: 600;
+      }
+
+      &.open-catalog-menu {
+        &:after {
+          flex: 0 0 auto;
+          .pseudo-icon('../img/icons/right-black.svg', 8px, 14px);
+        }
+
+        &.open-catalog-menu--active {
+          &:after {
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+
+    &__submenu {
+      position: static;
+      margin-top: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}

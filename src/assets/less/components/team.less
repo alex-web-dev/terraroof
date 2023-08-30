@@ -12,6 +12,17 @@
     }
   }
 
+  &__list {
+    margin: -67px -10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 67px 10px 0;
+    width: calc(99.99% / 3 - 20px);
+  }
+
   @media (max-width: 991px) {
     &__title {
       margin-bottom: 24px;
@@ -21,6 +32,17 @@
       &-box {
         padding-bottom: 40px;
       }
+    }
+  }
+
+  @media (max-width: 840px) {
+    &__list {
+      margin-top: -42px;
+    }
+
+    &__item {
+      margin-top: 42px;
+      width: calc(50% - 20px);
     }
   }
 
@@ -39,6 +61,15 @@
       &-box {
         padding-bottom: 30px;
       }
+    }
+
+    &__list {
+      margin: -24px -6px 0;
+    }
+    
+    &__item {
+      margin: 24px 6px 0;
+      width: calc(50% - 12px);
     }
   }
 }

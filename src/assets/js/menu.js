@@ -1,24 +1,31 @@
+import { lockBody, unlockBody } from './body';
+
 const $menu = document.querySelector('.menu');
 if ($menu) {
   $menu.classList.add('menu--show');
   
   const $menuToggle = $menu.querySelector('.menu__toggle');
   $menuToggle.addEventListener('click', () => {
-    $menu.classList.toggle('menu--active');
-    document.body.classList.toggle('body--lock');
+    if ($menu.classList.contains('menu--active')) {
+      $menu.classList.remove('menu--active');
+      unlockBody();
+    } else {
+      $menu.classList.add('menu--active');
+      lockBody();
+    }
   });
 
   $menu.addEventListener('click', (e) => {
     if ($menu === e.target && $menu.classList.contains('menu--active')) {
       $menu.classList.remove('menu--active');
-      document.body.classList.remove('body--lock');
+      unlockBody();
     }
   });
 
   const $submenus = $menu.querySelectorAll('.menu__submenu');
   $submenus.forEach($submenu => {
-    $item = $submenu.closest('.menu__item');
-    $btn = $item.querySelector('.menu__link');
+    const $item = $submenu.closest('.menu__item');
+    const $btn = $item.querySelector('.menu__link');
     $btn.addEventListener('click', () => $item.classList.toggle('menu__item--active'));
   });
 
