@@ -1,4 +1,6 @@
 .catalog-sidebar {
+  font-family: 'Inter', sans-serif;
+
   &__title {
     margin-bottom: 13px;
     font-size: 20px;
@@ -6,28 +8,32 @@
     text-transform: uppercase;
   }
 
-  &__item {
-    border-top: 1px solid #f5f5f5;
-
-    &:last-child {
-      border-bottom: 1px solid #f5f5f5;
-    }
+  &__mobile-title {
+    margin-bottom: 10px;
+    padding: 0 16px 6px;
+    display: none;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #f5f5f5;
   }
 
   &__btn {
-    padding: 14px 8px 14px 0;
+    padding: 10px 17px 11px 8px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 4px;
     text-align: left;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 1.5;
 
     &:after {
       margin-left: auto;
       flex: 0 0 auto;
-      .pseudo-icon('../img/icons/right-black.svg', 9px, 17px);
+      .pseudo-icon('../img/icons/right-black.svg', 7px, 12px);
     }
 
     &-text {
@@ -35,36 +41,59 @@
     }
 
     &-img {
-      margin-right: 8px;
-      width: 38px;
-      height: 38px;
-      object-fit: cover;
-      border-radius: 6px;
+      margin-right: 14px;
+      flex: 0 0 auto;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+
+      &-active {
+        border-radius: 6px;
+        display: none;
+      }
+
+      &-inactive {
+        border-radius: 6px;
+        display: block;
+      }
     }
   }
 
   &__sublist {
-    padding-bottom: 13px;
+    padding: 12px 40px;
     display: none;
   }
 
   &__subitem {
     &:not(:first-child) {
-      margin-top: 8px;
+      margin-top: 12px;
     }
   }
 
   &__item--active &__btn {
-    color: @color-second;
+    background-color: #e9edf4;
 
     &:after {
       transform: rotate(90deg);
-      background-image: url('../../img/icons/right-second.svg');
     }
   }
 
   &__item--active &__sublist {
     display: block;
+  }
+
+  &__item:hover &__btn,
+  &__item--active &__btn {
+    &-img {
+      &-active {
+        display: block;
+      }
+  
+      &-inactive {
+        display: none;
+      }
+    }
   }
 
   &__close {
@@ -79,17 +108,6 @@
 
     &:before {
       .pseudo-icon('../img/icons/close.svg', 14px, 14px);
-    }
-  }
-
-  @media (max-width: 1240px) {
-    &__btn {
-      font-size: 16px;
-
-      &:after {
-        width: 8px;
-        height: 14px;
-      }
     }
   }
 
@@ -119,7 +137,7 @@
 
     &__content {
       position: relative;
-      padding: 20px 0;
+      padding: 43px 0 20px;
       z-index: 1;
       overflow-y: auto;
       max-height: 100vh;
@@ -131,18 +149,14 @@
       padding: 0 20px;
     }
 
+    &__mobile-title {
+      display: block;
+    }
+
     &__list {
       &:first-child {
         margin-top: 40px;
       }
-    }
-
-    &__btn {
-      padding: 11px 18px;
-    }
-
-    &__sublist {
-      padding: 0 18px 11px;
     }
 
     &__close {

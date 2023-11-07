@@ -1,0 +1,49 @@
+.text-more {
+  &__main {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    transition: height 0.4s;
+  }
+
+  &__btn {
+    margin-top: 4px;
+    padding: 6px 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -0.24px;
+    color: #ea131c;
+
+    &:before {
+      margin-right: 5px;
+      .pseudo-icon("../img/icons/down-danger.svg", 14px, 7px);
+      transition: transform .4s;
+    }
+
+    &--active {
+      &:before {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &--activating &__main {
+    -webkit-line-clamp: initial;
+  }
+
+  &--active &__main {
+    -webkit-line-clamp: initial;
+  }
+
+  @media (max-width: 767px) {
+    &__btn {
+      &:before {
+        width: 11px;
+        height: 6px;
+      }
+    }
+  }
+}

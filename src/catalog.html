@@ -262,12 +262,83 @@
 					</div>
 					<div class="catalog__header">
 						<h1 class="title6 catalog__title">Композитная черепица</h1>
-						<div class="catalog__companies" data-simplebar>
-							<div class="catalog__companies-list">
-								<img class="catalog__company" src="assets/img/companies/1.png" alt="">
-								<img class="catalog__company" src="assets/img/companies/2.png" alt="">
-								<img class="catalog__company" src="assets/img/companies/3.png" alt="">
-								<img class="catalog__company" src="assets/img/companies/4.png" alt="">
+						<div class="catalog__header-filters">
+							<div class="catalog-filters">
+								<div class="catalog-filters__item catalog-filters__item--mobile-row">
+									<span class="catalog-filters__label catalog-filters__label--mobile-row">В наличии</span>
+									<label class="checkbox checkbox--border">
+										<input class="checkbox__input" type="checkbox" checked>
+										<span class="checkbox__switch checkbox__switch--border-gray checkbox__switch--lg checkbox__switch--mt-0 checkbox__switch--sharp-primary"></span>
+									</label>
+								</div>
+								<div class="catalog-filters__item">
+									<span class="catalog-filters__label">Цена</span>
+									<div class="price-filter catalog-filters__price">
+										<input class="price-filter__input" type="number" placeholder="От">
+										<input class="price-filter__input" type="number" placeholder="До">
+									</div>
+								</div>
+								<div class="catalog-filters__item">
+									<span class="catalog-filters__label">Гарантия</span>
+									<div class="dropdown catalog-filters__dropdown">
+										<button class="dropdown__select-btn">Выбрать</button>
+										<div class="dropdown__main">
+											<div class="dropdown__checkboxes">
+												<label class="checkbox dropdown__checkboxes-item">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch checkbox__switch--border-gray checkbox__switch--xxs checkbox__switch--rounded-0 checkbox__switch--sharp"></span>
+													<span class="checkbox__text checkbox__text--xxs">От 1 года</span>
+												</label>
+												<label class="checkbox dropdown__checkboxes-item">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch checkbox__switch--border-gray checkbox__switch--xxs checkbox__switch--rounded-0 checkbox__switch--sharp"></span>
+													<span class="checkbox__text checkbox__text--xxs">От 3 лет</span>
+												</label>
+												<label class="checkbox dropdown__checkboxes-item">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch checkbox__switch--border-gray checkbox__switch--xxs checkbox__switch--rounded-0 checkbox__switch--sharp"></span>
+													<span class="checkbox__text checkbox__text--xxs">От 5 лет</span>
+												</label>
+												<label class="checkbox dropdown__checkboxes-item">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch checkbox__switch--border-gray checkbox__switch--xxs checkbox__switch--rounded-0 checkbox__switch--sharp"></span>
+													<span class="checkbox__text checkbox__text--xxs">От 10 лет</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-filters__item">
+									<span class="catalog-filters__label">Страна</span>
+									<div class="dropdown catalog-filters__dropdown">
+										<button class="dropdown__select-btn">Выбрать</button>
+										<div class="dropdown__main">
+											<div class="dropdown__checkboxes">
+												<label class="checkbox dropdown__checkboxes-item">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch checkbox__switch--border-gray checkbox__switch--xxs checkbox__switch--rounded-0 checkbox__switch--sharp"></span>
+													<span class="checkbox__text checkbox__text--xxs">Германия</span>
+												</label>
+												<label class="checkbox dropdown__checkboxes-item">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch checkbox__switch--border-gray checkbox__switch--xxs checkbox__switch--rounded-0 checkbox__switch--sharp"></span>
+													<span class="checkbox__text checkbox__text--xxs">Китай</span>
+												</label>
+												<label class="checkbox dropdown__checkboxes-item">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch checkbox__switch--border-gray checkbox__switch--xxs checkbox__switch--rounded-0 checkbox__switch--sharp"></span>
+													<span class="checkbox__text checkbox__text--xxs">Япония</span>
+												</label>
+												<label class="checkbox dropdown__checkboxes-item">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch checkbox__switch--border-gray checkbox__switch--xxs checkbox__switch--rounded-0 checkbox__switch--sharp"></span>
+													<span class="checkbox__text checkbox__text--xxs">Швеция</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="btn catalog-filters__mobile-btn">Применить фильтры</button>
 							</div>
 						</div>
 					</div>
@@ -278,6 +349,10 @@
 					<div class="catalog__main">
 						<aside class="catalog-sidebar catalog__sidebar">
 							<div class="catalog-sidebar__content">
+								<div class="catalog-sidebar__mobile-filters">
+									<div class="catalog-sidebar__mobile-title">Фильтры</div>
+								</div>
+								<div class="catalog-sidebar__mobile-title">Каталог</div>
 								<ul class="catalog-sidebar__list">
 									<!-- <li class="catalog-sidebar__item">
 										<button class="catalog-sidebar__btn">Акции</button>
@@ -307,202 +382,313 @@
 									</li> -->
 									<li class="catalog-sidebar__item">
 										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/1.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Керамическая черепица</span>
-										</button>
-										<ul class="catalog-sidebar__sublist">
-											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
-												</label>
-											</li>
-											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
-												</label>
-											</li>
-										</ul>
-									</li>
-									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/2.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Композитная черепица</span>
-										</button>
-										<ul class="catalog-sidebar__sublist">
-											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
-												</label>
-											</li>
-										</ul>
-									</li>
-									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/3.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Гибкая (битумная) черепица</span>
-										</button>
-										<ul class="catalog-sidebar__sublist">
-											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
-												</label>
-											</li>
-										</ul>
-									</li>
-									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/4.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Металлочерепица</span>
-										</button>
-										<ul class="catalog-sidebar__sublist">
-											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
-												</label>
-											</li>
-										</ul>
-									</li>
-									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Медная кровля</span>
-										</button>
-										<ul class="catalog-sidebar__sublist">
-											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
-												</label>
-											</li>
-										</ul>
-									</li>
-									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Фальцевая кровля</span>
-										</button>
-										<ul class="catalog-sidebar__sublist">
-											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
-												</label>
-											</li>
-										</ul>
-									</li>
-									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Сланцевая кровля</span>
-										</button>
-										<ul class="catalog-sidebar__sublist">
-											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
-												</label>
-											</li>
-										</ul>
-									</li>
-									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Солнечная крыша</span>
-										</button>
-										<ul class="catalog-sidebar__sublist">
-											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
-												</label>
-											</li>
-										</ul>
-									</li>
-									<li class="catalog-sidebar__item">
-										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/1.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/1.png" alt="">
+											</div>
 											<span class="catalog-sidebar__btn-text">Цинк-титановая кровля</span>
 										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">Rheinzik</span>
 												</label>
 											</li>
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
 										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Кровельная гидроизоляция</span>
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/2.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/2.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Цементно-песчаная черепица</span>
 										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
 												</label>
 											</li>
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
 										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Водосточные системы</span>
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/3.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/3.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Фальцевая кровля</span>
 										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
 												</label>
 											</li>
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
 										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/4.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/4.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Софиты для подшива кровли</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/5.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/5.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Солнечная крыша</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/6.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/6.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Сланцевая кровля</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/7.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/7.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Металлочерепица</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/8.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/8.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Медная кровля</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/9.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/9.png" alt="">
+											</div>
 											<span class="catalog-sidebar__btn-text">Мансардные окна</span>
 										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
 												</label>
 											</li>
 										</ul>
 									</li>
 									<li class="catalog-sidebar__item">
 										<button class="catalog-sidebar__btn">
-											<img class="catalog-sidebar__btn-img" src="assets/img/catalog/5.jpg" alt="">
-											<span class="catalog-sidebar__btn-text">Аксессуары</span>
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/10.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/10.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Кровельные аксессуары</span>
 										</button>
 										<ul class="catalog-sidebar__sublist">
 											<li class="catalog-sidebar__subitem">
-												<label class="checkbox">
-													<input class="checkbox__input" type="checkbox">
-													<span class="checkbox__switch"></span>
-													<span class="checkbox__text">Metrotile</span>
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/11.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/11.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Кровельная гидроизоляция</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/12.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/12.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Кровельная вентиляция</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/13.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/13.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Композитная черепица</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/14.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/14.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Керамическая черепица</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/15.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/15.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Гибкая (битумная) черепица</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/16.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/16.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Водосточные системы</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog-sidebar__item">
+										<button class="catalog-sidebar__btn">
+											<div class="catalog-sidebar__btn-img">
+												<img class="catalog-sidebar__btn-img-inactive" src="assets/img/catalog/inactive/17.png" alt="">
+												<img class="catalog-sidebar__btn-img-active" src="assets/img/catalog/active/17.png" alt="">
+											</div>
+											<span class="catalog-sidebar__btn-text">Безопасность кровли</span>
+										</button>
+										<ul class="catalog-sidebar__sublist">
+											<li class="catalog-sidebar__subitem">
+												<label class="checkbox-circle">
+													<input class="checkbox-circle__input" type="checkbox">
+													<span class="checkbox-circle__switch"></span>
+													<span class="checkbox-circle__text">RHEINZIK</span>
 												</label>
 											</li>
 										</ul>
@@ -1013,7 +1199,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 	</footer>
 

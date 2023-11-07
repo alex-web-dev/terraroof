@@ -1,0 +1,167 @@
+.product-docs {
+  font-family: 'Inter', sans-serif;
+
+  &__content {
+    padding: 0 24px;
+    
+    &--border-top {
+      padding-top: 42px;
+      border-top: 1px solid #cccccc;
+    }
+
+    &--px-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 55px;
+  }
+
+  &__list {
+    margin: -20px -10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 20px 10px 0;
+    width: calc(50% - 20px);
+
+    &--full {
+      width: calc(100% - 20px);
+    }
+  }
+
+  &__footer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-text {
+      font-size: 20px;
+      color: @color-dark;
+      letter-spacing: -0.4px;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+
+    &-btn {
+      border-radius: 7px;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  @media (max-width: 1320px) {
+    &__content {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__content {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &--px-0 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__item {
+      &--full {
+        width: calc(50% - 20px);
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__content {
+      &--border-top {
+        padding-top: 32px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__item {
+      width: calc(100% - 20px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 12px;
+      padding-right: 12px;
+      max-width: @content-sm-max-width;
+
+      &--border-top {
+        padding-top: 26px;
+      }
+
+      &--mobile-border-bottom {
+        padding-bottom: 28px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      &--px-0 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 24px;
+      font-size: 22px;
+    }
+
+    &__list {
+      margin-top: -10px;
+    }
+
+    &__item {
+      margin-top: 10px;
+    }
+
+    &__footer {
+      margin-top: 28px;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &-text {
+        font-size: 18px;
+        letter-spacing: -0.36px;
+      }
+
+      &-btn {
+        padding: 11px 15px;
+        font-size: 18px;
+      }
+
+      &-text,
+      &-btn {
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}

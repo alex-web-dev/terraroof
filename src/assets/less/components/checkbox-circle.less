@@ -1,0 +1,32 @@
+.checkbox-circle {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+
+  &__input {
+    display: none;
+  }
+
+  &__switch {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #848484;
+  }
+
+  &__text {
+    margin-left: 6px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__input:checked~&__switch {
+    border-color: @color-primary-light;
+    background-color: @color-primary-light;
+  }
+
+  &__input:checked~&__text {
+    font-weight: 500;
+  }
+}

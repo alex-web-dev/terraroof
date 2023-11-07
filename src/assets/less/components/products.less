@@ -42,6 +42,13 @@
     max-width: 808px;
   }
 
+  &__footer {
+    margin-top: 60px;
+    padding-top: 55px;
+    border-top: 1px solid #ccc;
+    text-align: right;
+  }
+
   @media (max-width: 1240px) {
     &__title {
       margin-bottom: 32px;
@@ -83,6 +90,11 @@
     &__callback {
       margin-top: 32px;
     }
+
+    &__footer {
+      margin-top: 40px;
+      padding-top: 32px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -113,11 +125,16 @@
       padding: 0;
       border-radius: 18px;
     }
-  }
+    
+    &__footer {
+      margin-top: 24px;
+      padding-top: 24px;
 
-  @media (max-width: 479px) {
-    &__item {
-      width: calc(100% - 12px);
+      &-btn {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+      }
     }
   }
 }

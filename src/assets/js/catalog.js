@@ -1,3 +1,5 @@
+import { moveElement } from "./helpers";
+
 const $sidebar = document.querySelector('.catalog-sidebar');
 if ($sidebar) {
   $sidebar.classList.add('catalog-sidebar--show');
@@ -23,5 +25,17 @@ if ($sidebar) {
       $sidebar.classList.remove('catalog-sidebar--active');
       document.body.classList.remove('body--lock');
     }
+  });
+
+  moveFilters();
+  window.addEventListener('resize', moveFilters);
+}
+
+function moveFilters() {
+  moveElement({
+    element: '.catalog-filters',
+    from: '.catalog__header-filters',
+    to: '.catalog-sidebar__mobile-filters',
+    width: 767,
   });
 }

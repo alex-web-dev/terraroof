@@ -30,6 +30,8 @@ const optimization = () => {
 const htmlPageNames = [
 	'catalog',
 	'product-card',
+	'product-card-details-docs-one',
+	'product-card-details-visual-one',
 	'blog',
 	'blog-all-articles',
 	'blog-article',

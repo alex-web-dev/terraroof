@@ -1,0 +1,146 @@
+.product-details {
+  font-family: 'Inter', sans-serif;
+
+  &__content {
+    padding: 0 24px;
+
+    &--desktop-border-top {
+      padding-top: 42px;
+      border-top: 1px solid #cccccc;
+    }
+
+    &--px-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__columns {
+    margin: 0 -15px;
+    display: flex;
+  }
+
+  &__column {
+    margin: 0 15px;
+    flex: 1 1 100%;
+  }
+
+  &__items {
+    display: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: -0.36px;
+    color: @color-dark;
+
+    &:not(:first-child) {
+      margin-top: 18px;
+    }
+
+    &-name {
+      width: 216px;
+    }
+
+    &-value {
+      font-weight: 300;
+      color: #4b4b4b;
+      flex: 0 0 auto;
+    }
+  }
+
+  &--static &__items {
+    display: block;
+  }
+
+  @media (max-width: 1320px) {
+    &__content {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__content {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &--px-0 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__columns {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__column {
+      &:not(:first-child) {
+        margin-top: 18px;
+      }
+    }
+
+    &__item {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 12px;
+      padding-right: 12px;
+      max-width: @content-sm-max-width;
+
+      &--desktop-border-top {
+        padding-top: 0;
+        border-top: none;
+      }
+
+      &--px-0 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 24px;
+      font-size: 22px;
+    }
+
+    &__column,
+    &__item {
+      &:not(:first-child) {
+        margin-top: 14px;
+      }
+    }
+
+    &__item {
+      font-size: 14px;
+      letter-spacing: -0.28px;
+
+      &-name {
+        width: 150px;
+      }
+    }
+  }
+}

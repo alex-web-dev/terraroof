@@ -1,0 +1,137 @@
+.doc-item {
+  display: flex;
+
+  &__img {
+    position: relative;
+    padding-top: 13.5%;
+    flex: 0 0 auto;
+    width: 140px;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--sm {
+      padding-top: 12%;
+    }
+  }
+
+  &__info {
+    padding: 16px 14px;
+    flex: 1 1 auto;
+    background-color: #f9f9f9;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  &__files {
+    margin: -10px -10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__file {
+    margin: 10px 10px 0;
+    display: flex;
+    align-items: center;
+
+    &-checkbox {
+      margin-right: 5px;
+    }
+
+    &-icon {
+      margin-right: 1px;
+    }
+
+    &-name {
+      font-size: 14px;
+      font-weight: 300;
+      color: @color-dark;
+      letter-spacing: -0.28px;
+    }
+  }
+
+  &__btn {
+    margin-left: 2px;
+    padding: 17px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 104px;
+    background-color: @color-primary-light;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+
+    &-icon {
+      .icon('../img/icons/download-white.svg', 26px, 24px);
+
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+    }
+
+    &--inactive {
+      background-color: #f9f9f9;
+      color: #a6a6a4;
+      pointer-events: none;
+    }
+
+    &--inactive &-icon {
+      background-image: url('../../img/icons/download-light-gray.svg');
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__img {
+      padding-top: 8.5%;
+      width: 125px;
+
+      &--sm {
+        padding-top: 8.5%;
+      }
+    }
+
+    &__name {
+      font-size: 18px;
+    }
+
+    &__btn {
+      padding: 14px;
+      width: 95px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__img {
+      display: none;
+    }
+
+    &__info {
+      padding: 6px 11px;
+    }
+
+    &__name {
+      font-size: 17px;
+    }
+
+    &__btn {
+      padding: 9px;
+      width: 76px;
+      font-size: 13px;
+    }
+  }
+}

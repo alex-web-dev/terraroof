@@ -1,37 +1,69 @@
 .btn {
-  padding: 14px 36px;
+  padding: 13px 36px;
   display: inline-block;
-  background-color: @color-primary;
-  border: 2px solid @color-primary;
+  background-color: @color-primary-light;
+  border: 1px solid @color-primary-light;
   border-radius: 6px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.15;
-  color: #fdf9f9;
-  transition: color .3s, background .3s, border .3s;
+  color: #fff;
+  transition: color 0.3s, background 0.3s, border 0.3s;
+
+  &--xs {
+    padding: 11px 14px;
+  }
+
+  &--sm {
+    padding: 13px 17px;
+  }
+
+  &--text-lg {
+    font-size: 18px;
+  }
+
+  &--rounded-lg {
+    border-radius: 8px;
+  }
+
+  &--rounded-xl {
+    border-radius: 10px;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
 
   @media (min-width: 767.01px) {
     &:hover {
       background-color: #fff;
-      color: @color-primary;
+      color: @color-primary-light;
+    }
+
+    &--active {
+      &:hover {
+        background-color: @color-primary-light;
+        color: #fff;
+        cursor: default;
+      }
     }
   }
 
   &--border {
     background-color: transparent;
-    color: @color-primary;
+    color: @color-primary-light;
 
     @media (min-width: 767.01px) {
       &:hover {
-        background-color: @color-primary;
-        color: #fdf9f9;
+        background-color: @color-primary-light;
+        color: #fff;
       }
     }
   }
 
   &--white {
     background-color: #fff;
-    color: @color-primary;
+    color: @color-primary-light;
     border-color: #fff;
 
     @media (min-width: 767.01px) {
@@ -50,6 +82,10 @@
     }
   }
 
+  &--border-width-2 {
+    border-width: 2px;
+  }
+
   @media (max-width: 991px) {
     padding: 12px 30px;
     font-size: 15px;
@@ -60,23 +96,27 @@
     padding: 10px 26px;
 
     &--sm-primary {
-      background-color: @color-primary;
+      background-color: @color-primary-light;
       color: #fdf9f9;
 
       &:hover {
         background-color: transparent;
-        color: @color-primary;
+        color: @color-primary-light;
       }
+    }
+
+    &--text-lg {
+      font-size: 16px;
     }
   }
 
   @media (max-width: 479px) {
     &--xs-border {
       background-color: transparent;
-      color: @color-primary;
+      color: @color-primary-light;
 
       &:hover {
-        background-color: @color-primary;
+        background-color: @color-primary-light;
         color: #fdf9f9;
       }
     }

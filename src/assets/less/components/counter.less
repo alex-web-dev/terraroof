@@ -1,6 +1,5 @@
 .counter {
   padding: 10px 32px;
-  height: 50px;
   display: flex;
   align-items: center;
   border: 1px solid #E0E5ED;
@@ -30,12 +29,24 @@
     height: 20px;
     font-size: 18px;
     line-height: 20px;
+
+    &--primary {
+      color: @color-primary-light;
+    }
   }
 
   &--high {
     height: 60px;
     padding-left: 31px;
     padding-right: 31px;
+  }
+
+  &--primary {
+    border-color: @color-primary-light;
+  }
+
+  &--sm {
+    padding: 10px 20px;
   }
 
   @media (max-width: 991px) {
@@ -59,6 +70,21 @@
       height: 46px;
       padding-left: 19px;
       padding-right: 19px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__input {
+      &--mobile-text-xl {
+        font-size: 25px;
+      }
+    }
+
+    &__minus,
+    &__plus {
+      &--mobile-text-xl {
+        font-size: 25px;
+      }
     }
   }
 }

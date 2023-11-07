@@ -6,6 +6,10 @@
   max-width: @container-width;
   margin: 0 auto;
   padding: 0 @container-offset;
+
+  &--size-lg {
+    max-width: 1368px;
+  }
 }
 
 .link {
@@ -97,6 +101,10 @@
     color: #fff;
   }
 
+  &--dark {
+    color: @color-dark;
+  }
+
   &--upper {
     text-transform: uppercase;
   }
@@ -104,6 +112,14 @@
   &--bottom-line {
     padding-bottom: 24px;
     border-bottom: 1px solid #e0e5ed;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--medium {
+    font-weight: 500;
   }
 }
 
@@ -120,12 +136,24 @@
     font-size: 18px;
   }
 
+  &--xl {
+    font-size: 20px;
+  }
+
   &--white {
     color: #fff;
   }
 
+  &--dark {
+    color: @color-dark;
+  }
+
   &--gray {
     color: @color-gray;
+  }
+
+  &--gray-light {
+    color: @color-gray-light;
   }
 }
 
@@ -154,6 +182,13 @@
 }
 
 @media (max-width: 1240px) {
+  .container {
+    &--xl {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .title1 {
     font-size: 56px;
   }
@@ -247,6 +282,11 @@
 @media (max-width: 767px) {
   .container {
     padding: 0 @container-sm-offset;
+
+    &--xl {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .title1 {

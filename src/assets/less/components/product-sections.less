@@ -1,0 +1,129 @@
+.product-sections {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+
+  &__docs {
+    margin-top: 60px;
+  }
+
+  &__visual {
+    margin-top: 45px;
+  }
+
+  &__columns {
+    &-content {
+      padding: 42px 24px 0;
+      border-top: 1px solid #ccc;
+    }
+
+    &-list {
+      margin: -20px -10px 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    margin: 20px 10px 0;
+
+    &--5 {
+      width: calc(99.99% / 12 * 5 - 20px);
+    }
+
+    &--7 {
+      width: calc(99.99% / 12 * 7 - 20px);
+    }
+  }
+
+  @media (max-width: 1320px) {
+    &__columns {
+      &-content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1240px) {
+    padding-top: 32px;
+
+    &__docs {
+      margin-top: 40px;
+    }
+
+    &__columns {
+      &-content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__column {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: calc(100% - 20px);
+
+      &:not(:first-child) {
+        margin-top: 40px;
+        padding-top: 32px;
+        border-top: 1px solid #ccc;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 28px;
+
+    &__details {
+      margin-top: 20px;
+    }
+
+    &__docs {
+      margin-top: 28px;
+    }
+
+    &__visual {
+      margin-top: 0;
+      order: -1;
+    }
+
+    &__columns {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: @content-sm-max-width;
+
+      &-content {
+        margin-top: 20px;
+        padding-top: 0;
+        border-top: none;
+
+        &--mobile-border-bottom {
+          padding-bottom: 28px;
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    }
+
+    &__column {
+      padding-left: 12px;
+      padding-right: 12px;
+      width: calc(100% - 20px);
+
+      &:not(:first-child) {
+        margin-top: 28px;
+        padding-top: 28px;
+        border-top: 1px solid #ccc;
+      }
+
+      &--mobile-first {
+        order: -1;
+
+        &:not(:first-child) {
+          padding-top: 16px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

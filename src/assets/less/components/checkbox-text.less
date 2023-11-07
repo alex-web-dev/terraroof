@@ -6,18 +6,18 @@
   }
 
   &__switch {
-    padding: 3px 10px;
+    padding: 2px 16px;
     border: 1px solid #e0e5ed;
-    border-radius: 4px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: @color-gray;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1;
+    color: @color-primary-light;
     cursor: pointer;
+    border-color: @color-primary-light;
   }
 
   &__input:checked~&__switch {
-    background: @color-primary;
-    border-color: @color-primary;
+    background: @color-primary-light;
     color: #fff;
   }
 
