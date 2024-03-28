@@ -15,7 +15,7 @@
 		<div class="container">
 			<div class="header__top">
 				<a class="logo header__logo" href="index.html">
-					<img class="logo__img" src="assets/img/logo.png" alt="">
+					<img class="logo__img" src="assets/img/logo.svg" alt="">
 					<span class="logo__text">Кровля достойная Вашего дома</span>
 				</a>
 				<nav class="menu header__menu">
@@ -38,13 +38,13 @@
 						<div class="menu__contacts">
 							<a class="menu__contact" href="#">
 								<div class="menu__contact-icon">
-									<img src="assets/img/icons/whatsapp.svg" alt="">
+									<img src="assets/img/icons/whatsapp-green.svg" alt="">
 								</div>
 								<span class="menu__contact-text">Заказать расчет</span>
 							</a>
 							<a class="menu__contact" href="tel:+77776333330">
 								<div class="menu__contact-icon">
-									<img src="assets/img/icons/phone.svg" alt="">
+									<img src="assets/img/icons/phone-green.svg" alt="">
 								</div>
 								<span class="menu__contact-text menu__contact-text--gray">+7 (777) 633 33 30</span>
 							</a>
@@ -54,17 +54,18 @@
 						<span class="menu__lines"></span>
 					</button>
 				</nav>
-				<div class="user-nav header__user-nav">
-					<a class="user-nav__link" href="cart.html">
-						<img src="assets/img/icons/cart.svg" alt="">
-					</a>
+				<a class="cart-btn header__cart-btn" href="cart.html">
+					<img class="cart-btn__icon" src="assets/img/icons/cart.svg" alt="">
+					<span class="cart-btn__count">15</span>
+				</a>
+				<!-- <div class="user-nav header__user-nav">
 					<a class="user-nav__link" href="#">
 						<img src="assets/img/icons/user.svg" alt="">
 					</a>
-				</div>
+				</div> -->
 				<a class="header__contact" href="tel:+77776333330">
 					<div class="header__contact-icon">
-						<img src="assets/img/icons/phone.svg" alt="">
+						<img src="assets/img/icons/phone-green.svg" alt="">
 					</div>
 					<div class="header__contact-info">
 						<div class="header__contact-title">+7 (777) 633 33 30</div>
@@ -74,27 +75,6 @@
 			</div>
 			<div class="header__bottom">
 				<ul class="addition-menu header__bottom-menu">
-					<!-- <li class="addition-menu__item addition-menu__item--has-submenu">
-						<a class="addition-menu__link" href="#">
-							О компании
-							<svg class="addition-menu__link-icon" width="8" height="14" viewBox="0 0 8 14" fill="none">
-								<path d="M1.5 1.1665L6.5 6.99984L1.5 12.8332" stroke-width="1.5"
-									stroke-linecap="round" stroke-linejoin="round" />
-							</svg>
-						</a>
-						<ul class="submenu addition-menu__submenu">
-							<li class="submenu__item">
-								<a class="submenu__item-link" href="about-us.html">О нас</a>
-							</li>
-							<li class="submenu__item">
-								<a class="submenu__item-link" href="cooperate.html">Сотрудничество</a>
-							</li>
-							<li class="submenu__item">
-								<a class="submenu__item-link" href="news.html">Новости</a>
-							</li>
-						</ul>
-					</li> -->
-
 					<!-- <li class="addition-menu__item addition-menu__item--has-submenu">
 						<a class="addition-menu__link open-catalog-menu" href="#">Каталог</a>
 						<div class="catalog-menu addition-menu__catalog">
@@ -225,21 +205,101 @@
 							</div>
 						</div>
 					</li> -->
-					
-					<li class="addition-menu__item">
-						<a href="catalog.html" class="addition-menu__link">Кровельные материалы</a>
+
+					<li class="addition-menu__item addition-menu__item--has-submenu">
+						<a class="addition-menu__link" href="#">
+							<div class="addition-menu__link-img">
+								<img class="addition-menu__link-img-inactive" src="assets/img/catalog/inactive/18.svg" alt="">
+								<img class="addition-menu__link-img-active" src="assets/img/catalog/active/18.svg" alt="">
+							</div>
+							Кровельные материалы
+							<svg class="addition-menu__link-icon" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 14.5L7.5 8L1.5 1.5" stroke="#8C8C8C" stroke-width="2"/>
+							</svg>
+						</a>
+						<ul class="submenu addition-menu__submenu">
+							<li class="submenu__item">
+								<a class="submenu__item-link" href="#">
+									<div class="submenu__item-icon">
+										<img class="submenu__item-icon-inactive" src="assets/img/catalog/inactive/14.png" alt="">
+										<img class="submenu__item-icon-active" src="assets/img/catalog/active/14.png" alt="">
+									</div>
+									Керамическая черепица
+								</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__item-link" href="#">
+									<div class="submenu__item-icon">
+										<img class="submenu__item-icon-inactive" src="assets/img/catalog/inactive/2.png" alt="">
+										<img class="submenu__item-icon-active" src="assets/img/catalog/active/2.png" alt="">
+									</div>
+									Цементно-песчаная черепица
+								</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__item-link" href="#">
+									<div class="submenu__item-icon">
+										<img class="submenu__item-icon-inactive" src="assets/img/catalog/inactive/15.png" alt="">
+										<img class="submenu__item-icon-active" src="assets/img/catalog/active/15.png" alt="">
+									</div>
+									Гибкая (битумная) черепица
+								</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__item-link" href="#">
+									<div class="submenu__item-icon">
+										<img class="submenu__item-icon-inactive" src="assets/img/catalog/inactive/13.png" alt="">
+										<img class="submenu__item-icon-active" src="assets/img/catalog/active/13.png" alt="">
+									</div>
+									Композитная черепица
+								</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__item-link" href="#">
+									<div class="submenu__item-icon">
+										<img class="submenu__item-icon-inactive" src="assets/img/catalog/inactive/7.png" alt="">
+										<img class="submenu__item-icon-active" src="assets/img/catalog/active/7.png" alt="">
+									</div>
+									Металлочерепица
+								</a>
+							</li>
+						</ul>
 					</li>
 					<li class="addition-menu__item">
-						<a href="catalog.html" class="addition-menu__link">Гидроизоляция</a>
+						<a href="catalog.html" class="addition-menu__link">
+							<div class="addition-menu__link-img">
+								<img class="addition-menu__link-img-inactive" src="assets/img/catalog/inactive/19.svg" alt="">
+								<img class="addition-menu__link-img-active" src="assets/img/catalog/active/19.svg" alt="">
+							</div>
+							Гидроизоляция
+						</a>
 					</li>
 					<li class="addition-menu__item">
-						<a href="catalog.html" class="addition-menu__link">Мансардные окна</a>
+						<a href="catalog.html" class="addition-menu__link">
+							<div class="addition-menu__link-img">
+								<img class="addition-menu__link-img-inactive" src="assets/img/catalog/inactive/9.png" alt="">
+								<img class="addition-menu__link-img-active" src="assets/img/catalog/active/9.png" alt="">
+							</div>
+							Мансардные окна
+						</a>
 					</li>
 					<li class="addition-menu__item">
-						<a href="catalog.html" class="addition-menu__link">Водосточные системы</a>
+						<a href="catalog.html" class="addition-menu__link">
+							<div class="addition-menu__link-img">
+								<img class="addition-menu__link-img-inactive" src="assets/img/catalog/inactive/16.png" alt="">
+								<img class="addition-menu__link-img-active" src="assets/img/catalog/active/16.png" alt="">
+							</div>
+							Водосточные системы
+						</a>
 					</li>
 					<li class="addition-menu__item">
-						<a href="catalog.html" class="addition-menu__link">Аксессуары</a>
+						<a href="catalog.html" class="addition-menu__link">
+							<div class="addition-menu__link-img">
+								<img class="addition-menu__link-img-inactive" src="assets/img/catalog/inactive/20.svg" alt="">
+								<img class="addition-menu__link-img-active" src="assets/img/catalog/active/20.svg" alt="">
+							</div>
+							Аксессуары
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -701,76 +761,23 @@
 							<div class="products__list">
 								<div class="product-card products__item">
 									<a class="product-card__img-box" href="product-card.html">
-										<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
-									</a>
-									<div class="product-card__info">
-										<h3 class="title5 product-card__name">
-											<a href="product-card.html">Metrotile Bond</a>
-										</h3>
-										<div class="product-card__meta">
-											<div class="text text--gray product-card__status">в наличии</div>
-											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
 										</div>
-										<div class="product-card__price">
-											<span class="product-card__price-new">
-												<span class="product-card__price-new-value">10 020 тг/за лист</span>
-											</span>
-										</div>
-										<div class="product-card__footer">
-											<a class="btn btn--border product-card__btn"
-												href="product-card.html">Заказать</a>
-										</div>
-									</div>
-								</div>
-								<div class="product-card products__item">
-									<a class="product-card__img-box" href="product-card.html">
-										<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
-									</a>
-									<div class="product-card__info">
-										<h3 class="title5 product-card__name">
-											<a href="product-card.html">Metrotile Bond</a>
-										</h3>
-										<div class="product-card__meta">
-											<div class="text text--gray product-card__status">в наличии</div>
-											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
-										</div>
-										<div class="product-card__price">
-											<span class="product-card__price-new">
-												<span class="product-card__price-new-value">10 020 тг/за лист</span>
-											</span>
-										</div>
-										<div class="product-card__footer">
-											<a class="btn btn--border product-card__btn"
-												href="product-card.html">Заказать</a>
-										</div>
-									</div>
-								</div>
-								<div class="product-card products__item">
-									<a class="product-card__img-box" href="product-card.html">
-										<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
-									</a>
-									<div class="product-card__info">
-										<h3 class="title5 product-card__name">
-											<a href="product-card.html">Metrotile Bond</a>
-										</h3>
-										<div class="product-card__meta">
-											<div class="text text--gray product-card__status">в наличии</div>
-											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
-										</div>
-										<div class="product-card__price">
-											<span class="product-card__price-new">
-												<span class="product-card__price-new-value">10 020 тг/за лист</span>
-											</span>
-										</div>
-										<div class="product-card__footer">
-											<a class="btn btn--border product-card__btn"
-												href="product-card.html">Заказать</a>
-										</div>
-									</div>
-								</div>
-								<div class="product-card products__item">
-									<a class="product-card__img-box" href="product-card.html">
-										<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
 										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
@@ -786,19 +793,37 @@
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
 										<div class="product-card__meta">
-											<div class="text text--gray product-card__status">в наличии</div>
+											<div class="text text--gray product-card__status">Есть в наличии</div>
 											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
 										</div>
-										<div class="product-card__price">
-											<span class="product-card__price-old">
-												<span class="product-card__price-old-value">12 390</span>
-											</span>
-											<span class="product-card__price-new">
-												<span class="product-card__price-new-value">10 000</span>
-												тг/за лист
-											</span>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Расход материала</span>
+												<span class="product-card__detail-value">2,15 м2</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Вес /Плитка</span>
+												<span class="product-card__detail-value">3,10 кг</span>
+											</div>
 										</div>
 										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
 											<a class="btn btn--border product-card__btn"
 												href="product-card.html">Заказать</a>
 										</div>
@@ -806,7 +831,23 @@
 								</div>
 								<div class="product-card products__item">
 									<a class="product-card__img-box" href="product-card.html">
-										<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
 										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
@@ -822,19 +863,33 @@
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
 										<div class="product-card__meta">
-											<div class="text text--gray product-card__status">в наличии</div>
+											<div class="text text--gray product-card__status">Есть в наличии</div>
 											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
 										</div>
-										<div class="product-card__price">
-											<span class="product-card__price-old">
-												<span class="product-card__price-old-value">12 390</span>
-											</span>
-											<span class="product-card__price-new">
-												<span class="product-card__price-new-value">10 000</span>
-												тг/за лист
-											</span>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Расход материала</span>
+												<span class="product-card__detail-value">2,15 м2</span>
+											</div>
 										</div>
 										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
 											<a class="btn btn--border product-card__btn"
 												href="product-card.html">Заказать</a>
 										</div>
@@ -842,7 +897,23 @@
 								</div>
 								<div class="product-card products__item">
 									<a class="product-card__img-box" href="product-card.html">
-										<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
 										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
@@ -858,19 +929,29 @@
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
 										<div class="product-card__meta">
-											<div class="text text--gray product-card__status">в наличии</div>
+											<div class="text text--gray product-card__status">Есть в наличии</div>
 											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
 										</div>
-										<div class="product-card__price">
-											<span class="product-card__price-old">
-												<span class="product-card__price-old-value">12 390</span>
-											</span>
-											<span class="product-card__price-new">
-												<span class="product-card__price-new-value">10 000</span>
-												тг/за лист
-											</span>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
 										</div>
 										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
 											<a class="btn btn--border product-card__btn"
 												href="product-card.html">Заказать</a>
 										</div>
@@ -878,7 +959,206 @@
 								</div>
 								<div class="product-card products__item">
 									<a class="product-card__img-box" href="product-card.html">
-										<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
+									</a>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
+											<a href="product-card.html">Metrotile Bond</a>
+										</h3>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">Есть в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Расход материала</span>
+												<span class="product-card__detail-value">2,15 м2</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Вес /Плитка</span>
+												<span class="product-card__detail-value">3,10 кг</span>
+											</div>
+										</div>
+										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
+									</div>
+								</div>
+								<div class="product-card products__item">
+									<a class="product-card__img-box" href="product-card.html">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
+									</a>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
+											<a href="product-card.html">Metrotile Bond</a>
+										</h3>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">Есть в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Расход материала</span>
+												<span class="product-card__detail-value">2,15 м2</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Вес /Плитка</span>
+												<span class="product-card__detail-value">3,10 кг</span>
+											</div>
+										</div>
+										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
+									</div>
+								</div>
+								<div class="product-card products__item">
+									<a class="product-card__img-box" href="product-card.html">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
+									</a>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
+											<a href="product-card.html">Metrotile Bond</a>
+										</h3>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">Есть в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Расход материала</span>
+												<span class="product-card__detail-value">2,15 м2</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Вес /Плитка</span>
+												<span class="product-card__detail-value">3,10 кг</span>
+											</div>
+										</div>
+										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
+									</div>
+								</div>
+								<div class="product-card products__item">
+									<a class="product-card__img-box" href="product-card.html">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
 										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
@@ -894,55 +1174,37 @@
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
 										<div class="product-card__meta">
-											<div class="text text--gray product-card__status">в наличии</div>
+											<div class="text text--gray product-card__status">Есть в наличии</div>
 											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
 										</div>
-										<div class="product-card__colors">
-											<div class="product-card__colors-list">
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-1-color" data-price="10000"
-														data-price-old="12390" checked>
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/1.jpg" alt="">
-													</span>
-												</label>
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-1-color" data-price="9500"
-														data-price-old="11890">
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/2.jpg" alt="">
-													</span>
-												</label>
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-1-color" data-price="11000"
-														data-price-old="13590">
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/3.jpg" alt="">
-													</span>
-												</label>
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-1-color" data-price="12500"
-														data-price-old="15290">
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/2.jpg" alt="">
-													</span>
-												</label>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Расход материала</span>
+												<span class="product-card__detail-value">2,15 м2</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Вес /Плитка</span>
+												<span class="product-card__detail-value">3,10 кг</span>
 											</div>
 										</div>
-										<div class="product-card__price">
-											<span class="product-card__price-old">
-												<span class="product-card__price-old-value">12 390</span>
-											</span>
-											<span class="product-card__price-new">
-												<span class="product-card__price-new-value">10 000</span>
-												тг/за лист
-											</span>
-										</div>
 										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
 											<a class="btn btn--border product-card__btn"
 												href="product-card.html">Заказать</a>
 										</div>
@@ -950,7 +1212,23 @@
 								</div>
 								<div class="product-card products__item">
 									<a class="product-card__img-box" href="product-card.html">
-										<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
 										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
@@ -966,47 +1244,37 @@
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
 										<div class="product-card__meta">
-											<div class="text text--gray product-card__status">в наличии</div>
+											<div class="text text--gray product-card__status">Есть в наличии</div>
 											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
 										</div>
-										<div class="product-card__colors">
-											<div class="product-card__colors-list">
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-2-color" data-price="10000"
-														data-price-old="12390" checked>
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/1.jpg" alt="">
-													</span>
-												</label>
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-2-color" data-price="9500"
-														data-price-old="11890">
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/2.jpg" alt="">
-													</span>
-												</label>
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-2-color" data-price="11000"
-														data-price-old="13590">
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/3.jpg" alt="">
-													</span>
-												</label>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Расход материала</span>
+												<span class="product-card__detail-value">2,15 м2</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Вес /Плитка</span>
+												<span class="product-card__detail-value">3,10 кг</span>
 											</div>
 										</div>
-										<div class="product-card__price">
-											<span class="product-card__price-old">
-												<span class="product-card__price-old-value">12 390</span>
-											</span>
-											<span class="product-card__price-new">
-												<span class="product-card__price-new-value">10 000</span>
-												тг/за лист
-											</span>
-										</div>
 										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
 											<a class="btn btn--border product-card__btn"
 												href="product-card.html">Заказать</a>
 										</div>
@@ -1014,7 +1282,23 @@
 								</div>
 								<div class="product-card products__item">
 									<a class="product-card__img-box" href="product-card.html">
-										<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
 										<div class="tags product-card__tags">
 											<div class="tags__list tags__list--jc-end">
 												<div class="tag tag--sm-small tags__item">
@@ -1030,47 +1314,107 @@
 											<a href="product-card.html">Metrotile Bond</a>
 										</h3>
 										<div class="product-card__meta">
-											<div class="text text--gray product-card__status">в наличии</div>
+											<div class="text text--gray product-card__status">Есть в наличии</div>
 											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
 										</div>
-										<div class="product-card__colors">
-											<div class="product-card__colors-list">
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-3-color" data-price="10000"
-														data-price-old="12390" checked>
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/1.jpg" alt="">
-													</span>
-												</label>
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-3-color" data-price="9500"
-														data-price-old="11890">
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/2.jpg" alt="">
-													</span>
-												</label>
-												<label class="checkbox-color product-card__colors-item">
-													<input class="checkbox-color__input js-product-card-color"
-														type="radio" name="product-3-color" data-price="11000"
-														data-price-old="13590">
-													<span class="checkbox-color__switch">
-														<img src="assets/img/products/colors/3.jpg" alt="">
-													</span>
-												</label>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Расход материала</span>
+												<span class="product-card__detail-value">2,15 м2</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Вес /Плитка</span>
+												<span class="product-card__detail-value">3,10 кг</span>
 											</div>
 										</div>
-										<div class="product-card__price">
-											<span class="product-card__price-old">
-												<span class="product-card__price-old-value">12 390</span>
-											</span>
-											<span class="product-card__price-new">
-												<span class="product-card__price-new-value">10 000</span>
-												тг/за лист
-											</span>
+										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
+											<a class="btn btn--border product-card__btn"
+												href="product-card.html">Заказать</a>
+										</div>
+									</div>
+								</div>
+								<div class="product-card products__item">
+									<a class="product-card__img-box" href="product-card.html">
+										<div class="product-card__slider swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/12.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/4.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/5.jpg" alt="">
+												</div>
+												<div class="swiper-slide">
+													<img class="product-card__img" src="assets/img/products/6.jpg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-bullets swiper-bullets--transparent product-card__pagination"></div>
+										<div class="tags product-card__tags">
+											<div class="tags__list tags__list--jc-end">
+												<div class="tag tag--sm-small tags__item">
+													<img class="tag__icon tag__icon--sm-small"
+														src="assets/img/icons/sale.svg" alt="">
+													<span class="tag__text">акция</span>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="product-card__info">
+										<h3 class="title5 product-card__name">
+											<a href="product-card.html">Metrotile Bond</a>
+										</h3>
+										<div class="product-card__meta">
+											<div class="text text--gray product-card__status">Есть в наличии</div>
+											<img class="product-card__logo" src="assets/img/product-logo.png" alt="">
+										</div>
+										<div class="product-card__details">
+											<div class="product-card__detail">
+												<span>Общая длина</span>
+												<span class="product-card__detail-value">1340 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Ширина покрытия</span>
+												<span class="product-card__detail-value">369 мм</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Расход материала</span>
+												<span class="product-card__detail-value">2,15 м2</span>
+											</div>
+											<div class="product-card__detail">
+												<span>Вес /Плитка</span>
+												<span class="product-card__detail-value">3,10 кг</span>
+											</div>
 										</div>
 										<div class="product-card__footer">
+											<div class="product-card__price">
+												<span class="product-card__price-old">
+													<span class="product-card__price-old-value">12 390</span>
+												</span>
+												<span class="product-card__price-new">
+													<span class="product-card__price-new-value">10 000</span>
+													тг/за лист
+												</span>
+											</div>
 											<a class="btn btn--border product-card__btn"
 												href="product-card.html">Заказать</a>
 										</div>
@@ -1148,7 +1492,7 @@
 			<div class="footer__content">
 				<div class="footer__top">
 					<a class="footer__logo" href="#">
-						<img class="footer__logo-img" src="assets/img/logo-white.png" alt="">
+						<img class="footer__logo-img" src="assets/img/logo-white.svg" alt="">
 					</a>
 					<ul class="footer__menu">
 						<li class="footer__menu-item">
@@ -1215,7 +1559,7 @@
 	<div class="popup" data-name="callback">
 		<div class="popup__content">
 			<form class="popup-form popup__form js-form" autocomplete="off">
-				<img class="popup-form__logo" src="assets/img/logo.png" alt="">
+				<img class="popup-form__logo" src="assets/img/logo.svg" alt="">
 				<div class="title5 popup-form__title">Оставьте заявку, и мы свяжемся с Вами!</div>
 				<div class="popup-form__main">
 					<div class="form-field popup-form__item">

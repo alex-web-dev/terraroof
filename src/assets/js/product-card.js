@@ -1,18 +1,18 @@
-const $colorInputs = document.querySelectorAll('.js-product-card-color');
-$colorInputs.forEach($input => {
-  const $productCard = $input.closest('.product-card');
-  const $productPriceOld = $productCard.querySelector('.product-card__price-old-value');
-  const $productPriceNew = $productCard.querySelector('.product-card__price-new-value');
+import Swiper, { Pagination } from "swiper";
 
-  $input.addEventListener('change', () => {
-    const priceOld = +$input.dataset.priceOld;
-    if (priceOld) {
-      $productPriceOld.innerText = priceOld.toLocaleString();
-    }
+Swiper.use([Pagination]);
 
-    const priceNew = +$input.dataset.price;
-    if (priceNew) {
-      $productPriceNew.innerText = priceNew.toLocaleString();
-    }
+const $productCards = document.querySelectorAll(".product-card");
+$productCards.forEach(($productCard) => {
+  const $slider = $productCard.querySelector('.product-card__slider');
+  const $pagination = $productCard.querySelector('.product-card__pagination');
+  
+  new Swiper($slider, {
+    slidesPerView: 1,
+    speed: 600,
+    pagination: {
+      el: $pagination,
+      clickable: true,
+    },
   });
 });

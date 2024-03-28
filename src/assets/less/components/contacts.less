@@ -7,32 +7,80 @@
 
   &__list {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
+    width: 310px;
+    padding: 30px 18px 20px 29px;
+    background: linear-gradient(106.96deg, #00AAB5 -3.51%, rgba(0, 92, 182, 0.96) 81.69%);
+    border-radius: 15px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      border: 15px solid transparent;
+      border-left: 28px solid @color-primary;
+      top: 135px;
+      right: -42px;
+    }
+
+    &-title {
+      position: relative;
+      margin-bottom: 24px;
+      padding-bottom: 30px;
+      text-transform: uppercase;
+      line-height: 1.4;
+
+      &:before {
+        content: '';
+        width: 63px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
   }
 
   &__item {
-    padding-right: 12px;
+    color: #fff;
 
     &:not(:first-child) {
-      margin-top: 40px;
+      margin-top: 24px;
+    }
+
+    &-icon {
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      width: 22px;
     }
 
     &-label {
-      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 7px;
+      font-size: 18px;
       line-height: 1.5;
-      color: @color-gray;
     }
 
     &-value {
-      font-size: 24px;
-      line-height: 1.5;
+      font-size: 17px;
+      line-height: 1.41;
+
+      &--line {
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
 
   &__map {
     position: relative;
     margin-left: auto;
-    max-width: 1020px;
+    max-width: 955px;
     padding-top: 620px;
 
     iframe {
@@ -47,6 +95,11 @@
   @media (max-width: 1320px) {
     &__list {
       position: static;
+      width: 100%;
+
+      &:before {
+        display: none;
+      }
     }
 
     &__item {
@@ -88,19 +141,28 @@
       margin-bottom: 16px;
     }
 
+    &__list {
+      padding: 22px 15px 20px 15px;
+
+      &-title {
+        padding-bottom: 24px;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+    }
+
     &__item {
       &:not(:first-child) {
-        margin-top: 12px;
-      }
-
-      &:nth-child(3n),
-      &:nth-child(3n + 1),
-      &:nth-child(3n + 2) {
-        width: 100%;
+        margin-top: 15px;
       }
 
       &:nth-child(3n) {
         align-items: flex-start;
+      }
+
+      &-icon {
+        margin-right: 8px;
+        width: 18px;
       }
 
       &-label {

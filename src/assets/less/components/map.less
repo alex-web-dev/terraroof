@@ -23,27 +23,27 @@
 
     &:nth-child(1) {
       left: 8.2%;
-      top: 36%;
+      top: 34%;
     }
 
     &:nth-child(2) {
       left: 11.6%;
-      top: 73.8%;
+      top: 68.8%;
     }
 
     &:nth-child(3) {
       left: 12.7%;
-      top: 54.8%;
+      top: 51%;
     }
 
     &:nth-child(4) {
       left: 24.5%;
-      top: 43.2%;
+      top: 40.2%;
     }
 
     &:nth-child(5) {
       left: 37.7%;
-      bottom: 22.5%;
+      bottom: 27.5%;
       font-size: 16px;
 
       img {
@@ -54,12 +54,12 @@
 
     &:nth-child(6) {
       left: 38.4%;
-      top: 25.2%;
+      top: 23.5%;
     }
 
     &:nth-child(7) {
       left: 51%;
-      top: 81.5%;
+      top: 76.2%;
       flex-direction: column;
 
       img {
@@ -69,7 +69,7 @@
 
     &:nth-child(8) {
       right: 41.6%;
-      top: 90.3%;
+      top: 84.3%;
       flex-direction: row-reverse;
 
       span {
@@ -80,7 +80,7 @@
 
     &:nth-child(9) {
       left: 49.5%;
-      top: 11.2%;
+      top: 10.2%;
       flex-direction: column;
 
       img {
@@ -89,13 +89,13 @@
     }
 
     &:nth-child(10) {
-      right: 37.7%;
-      top: 21%;
+      right: 37%;
+      top: 19.8%;
     }
 
     &:nth-child(11) {
       right: 37.1%;
-      top: 33%;
+      top: 30.5%;
       flex-direction: row-reverse;
 
       span {
@@ -106,32 +106,32 @@
 
     &:nth-child(12) {
       right: 34.2%;
-      bottom: 14%;
+      bottom: 19.5%;
     }
 
     &:nth-child(13) {
       right: 20.7%;
-      top: 29.8%;
+      top: 27.8%;
     }
 
     &:nth-child(14) {
       right: 27%;
-      top: 45.4%;
+      top: 42.4%;
     }
 
     &:nth-child(15) {
       right: 11.7%;
-      top: 40.8%;
+      top: 37.8%;
     }
 
     &:nth-child(16) {
       right: 3.7%;
-      top: 47.4%;
+      top: 44.4%;
     }
 
     &:nth-child(17) {
       right: 14.8%;
-      bottom: 26.5%;
+      bottom: 31.2%;
       flex-direction: column;
 
       img {
@@ -141,7 +141,7 @@
 
     &:nth-child(18) {
       right: 17.2%;
-      bottom: 19%;
+      bottom: 24%;
     }
 
     &--show {
@@ -167,6 +167,166 @@
     height: 100%;
     object-fit: contain;
     object-position: top;
+  }
+
+  @media (max-width: 1320px) {
+    &__mark {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: #fff;
+  
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        border-radius: 50%;
+        animation: pulse-mark 1.5s infinite;
+      }
+  
+      span {
+        margin-left: 3px;
+      }
+  
+      &:nth-child(1) {
+        left: 8.2%;
+        top: 36%;
+      }
+  
+      &:nth-child(2) {
+        left: 11.6%;
+        top: 73.8%;
+      }
+  
+      &:nth-child(3) {
+        left: 12.7%;
+        top: 54.8%;
+      }
+  
+      &:nth-child(4) {
+        left: 24.5%;
+        top: 43.2%;
+      }
+  
+      &:nth-child(5) {
+        left: 37.7%;
+        bottom: 22.5%;
+        font-size: 16px;
+  
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+  
+      &:nth-child(6) {
+        left: 38.4%;
+        top: 25.2%;
+      }
+  
+      &:nth-child(7) {
+        left: 51%;
+        top: 81.5%;
+        flex-direction: column;
+  
+        img {
+          transform: translateX(6px);
+        }
+      }
+  
+      &:nth-child(8) {
+        right: 41.6%;
+        top: 90.3%;
+        flex-direction: row-reverse;
+  
+        span {
+          margin-left: 0;
+          margin-right: 4px;
+        }
+      }
+  
+      &:nth-child(9) {
+        left: 49.5%;
+        top: 11.2%;
+        flex-direction: column;
+  
+        img {
+          transform: translate(4px, -3px);
+        }
+      }
+  
+      &:nth-child(10) {
+        right: 37.7%;
+        top: 21%;
+      }
+  
+      &:nth-child(11) {
+        right: 37.1%;
+        top: 33%;
+        flex-direction: row-reverse;
+  
+        span {
+          margin-left: 0;
+          margin-right: 8px;
+        }
+      }
+  
+      &:nth-child(12) {
+        right: 34.2%;
+        bottom: 14%;
+      }
+  
+      &:nth-child(13) {
+        right: 20.7%;
+        top: 29.8%;
+      }
+  
+      &:nth-child(14) {
+        right: 27%;
+        top: 45.4%;
+      }
+  
+      &:nth-child(15) {
+        right: 11.7%;
+        top: 40.8%;
+      }
+  
+      &:nth-child(16) {
+        right: 3.7%;
+        top: 47.4%;
+      }
+  
+      &:nth-child(17) {
+        right: 14.8%;
+        bottom: 26.5%;
+        flex-direction: column;
+  
+        img {
+          transform: translate(5px, -3px);
+        }
+      }
+  
+      &:nth-child(18) {
+        right: 17.2%;
+        bottom: 19%;
+      }
+  
+      &--show {
+        z-index: 2;
+  
+        img {
+          visibility: visible;
+          opacity: 1;
+        }
+  
+        span {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
   }
 
   @media (max-width: 1140px) {

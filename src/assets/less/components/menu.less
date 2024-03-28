@@ -25,6 +25,7 @@
   &__link {
     position: relative;
     font-size: 14px;
+    font-weight: 600;
     transition: color .3s;
 
     &-icon {
@@ -37,17 +38,13 @@
 
     @media (min-width: 992px) {
       &:hover {
-        color: @color-second;
-      }
-
-      &:hover &-icon {
-        stroke: @color-second;
+        color: @color-primary-light;
       }
     }
 
     &--active {
       font-weight: 700;
-      color: @color-second;
+      color: @color-primary-light;
     }
 
     &--active &-icon {
@@ -91,13 +88,13 @@
 
   &__contact-icon {
     margin-right: 8px;
-    width: 32px;
-    height: 32px;
+    width: 38px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: @color-success;
+    background-color: rgba(@color-success, 0.1);
 
     &--second {
       background-color: @color-second;

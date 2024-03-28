@@ -6,12 +6,35 @@
 
     &:not(:first-child) {
       margin-left: 32px;
+      padding-left: 32px;
+      border-left: 1px solid #ebebeb;
     }
   }
 
   &__link {
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
     transition: color 0.3s;
+
+    &-img {
+      margin-right: 10px;
+      width: 28px;
+      height: 28px;
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+
+      &-active {
+        display: none;
+      }
+    }
 
     &-icon {
       transform: rotate(90deg);
@@ -21,14 +44,8 @@
       transition: stroke 0.3s;
     }
 
-    @media (min-width: 992px) {
-      &:hover {
-        color: @color-second;
-      }
-
-      &:hover &-icon {
-        stroke: @color-second;
-      }
+    &:hover {
+      color: @color-primary-light;
     }
 
     &--active {
@@ -41,23 +58,39 @@
     }
   }
 
-  &__item--has-submenu &__link {
-    display: flex;
-    align-items: center;
+  &__item--active &__link {
+    &-img {
+      &-inactive {
+        display: none;
+      }
+
+      &-active {
+        display: flex;
+      }
+    }
   }
 
   &__submenu {
     position: absolute;
-    margin-top: 10px;
+    margin-top: 19px;
     left: 0;
     top: 100%;
-    z-index: 10;
-    width: 260px;
+    z-index: -1;
+    min-width: 354px;
     display: none;
   }
 
   &__item--active &__submenu {
     display: block;
+  }
+
+  @media (max-width: 1280px) {
+    &__item {
+      &:not(:first-child) {
+        margin-left: 23px;
+        padding-left: 23px;
+      }
+    }
   }
 
   @media (max-width: 991px) {
@@ -70,6 +103,8 @@
 
       &:not(:first-child) {
         margin-left: 0;
+        padding-left: 0;
+        border-left: none;
       }
     }
 
@@ -91,9 +126,13 @@
       padding: 11px 25px 11px 18px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
       font-size: 14px;
       line-height: 1.375;
+
+      &-img {
+        width: 24px;
+        height: 24px;
+      }
 
       &-icon {
         transform: rotate(0);
@@ -123,6 +162,7 @@
       position: static;
       margin-top: 0;
       max-width: 100%;
+      min-width: auto;
       width: 100%;
     }
   }
